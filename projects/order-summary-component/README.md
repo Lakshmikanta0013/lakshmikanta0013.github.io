@@ -6,7 +6,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links]
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -22,8 +22,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://www.lakshmikanta0013.github.io/projects/order-summary-component/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/ordersummarycomponent-nT-w99uXJH)
+- Live Site URL: [View Live](https://lakshmikanta0013.github.io/projects/order-summary-component)
 
 ## My Process
 
@@ -36,4 +36,4 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Author
 
 - Website - [Lakshmikanta Patra](https://lakshmikanta0013.github.io/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Lakshmikanta0013)
+- Frontend Mentor - [@lakshmikanta0013](https://www.frontendmentor.io/profile/Lakshmikanta0013)
