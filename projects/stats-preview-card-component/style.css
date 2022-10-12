@@ -41,7 +41,7 @@ body {
 .container {
     background-color: var(--clr-card-bg);
     color: var(--clr-paragraph);
-    width: calc(100% - 20vw);
+    width: 80%;
     min-width: 375px;
     border-radius: 1rem;
     display: grid;
