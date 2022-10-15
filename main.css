@@ -40,7 +40,7 @@ body {
     align-items: center;
     font-family: 'Rammetto One', sans-serif;
     font-weight: 400;
-    font-size: calc(3rem + 3vw);
+    font-size: calc(3rem + 1.2vw);
     text-align: center;
     color: white;
     text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.51);
