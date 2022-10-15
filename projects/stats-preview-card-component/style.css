@@ -107,7 +107,10 @@ body {
     height: 100%;
     border-radius: inherit;
     mix-blend-mode: multiply;
+<<<<<<< HEAD
     opacity: 80%;
+=======
+>>>>>>> 8e81b024415141d0051a65c5bd6af0791aa3c078
 }
 
 .content {
