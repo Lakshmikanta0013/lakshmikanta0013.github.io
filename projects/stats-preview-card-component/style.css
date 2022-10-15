@@ -49,7 +49,7 @@ body {
     grid-template-areas:
         "image"
         "content";
-    box-shadow: 0 0 10px 5px hsl(233, 47%, 3%);
+    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
 }
 
 @media (min-width: 40rem) {
@@ -65,7 +65,7 @@ body {
 }
 
 .image {
-    background-color: var(--clr-accent);
+    position: relative;
     width: 100%;
     grid-area: image;
     border-radius: 1rem 1rem 0 0;
@@ -74,7 +74,6 @@ body {
 .mobile-img {
     display: block;
     width: 100%;
-    opacity: 0.6;
     border-radius: inherit;
 }
 
@@ -96,8 +95,18 @@ body {
         height: 100%;
         width: 100%;
         border-radius: inherit;
-        opacity: 0.6;
     }
+}
+
+.clr-blend {
+    position: absolute;
+    inset: 0;
+    display: inline-block;
+    background-color: var(--clr-accent);
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    mix-blend-mode: multiply
 }
 
 .content {
