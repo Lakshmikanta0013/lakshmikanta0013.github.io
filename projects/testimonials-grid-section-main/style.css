@@ -36,10 +36,12 @@ ul {
 
 body {
     font-size: 1.6rem;
-    background-color: var(--clr-bg);
+    background-color: hsla(0, 0%, 13%, 0.2);
     width: 100%;
     height: 100vh;
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 1fr auto;
     grid-template-areas:
         "main"
         "footer";

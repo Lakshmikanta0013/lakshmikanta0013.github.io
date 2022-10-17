@@ -28,7 +28,7 @@ font-family: 'Lexend Deca', sans-serif; -->
     body {
       background-color: hsl(0, 0%, 95%);
       width: 100%;
-      height: 100%;
+      height: 100vh;
       display: grid;
       grid-template-columns: minmax(0 1fr);
       grid-template-rows: 1fr auto;
@@ -142,15 +142,19 @@ font-family: 'Lexend Deca', sans-serif; -->
 
     footer {
       grid-area: footer;
+      background-color: var(--clr-dark);
     }
 
-    .attribution {
-      font-size: 11px;
+    footer p {
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-light);
+      color: var(--clr-fg-light);
       text-align: center;
+      padding: 2px 0;
     }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
+    footer a {
+      color: var(--clr-blue);
     }
   </style>
 </head>
@@ -178,10 +182,8 @@ font-family: 'Lexend Deca', sans-serif; -->
     </section>
   </main>
   <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <p>Designed by <a href="https://lakshmiknta0013.github.io">Lakshmikanta Patra</a> with <span
+        style="color: red;">&hearts;</span></p>
   </footer>
 
 </body>

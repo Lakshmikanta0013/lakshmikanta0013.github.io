@@ -25,11 +25,11 @@ Users should be able to:
 
 - Desktop View
 
-![Desktop View](./screenshot/screenshot-desktop.png)
+![Desktop View](./screenshot/desktop-view.png)
 
 - Mobile View
 
-![Mobile View](./screenshot/screenshot-mobile.png)
+![Mobile View](./screenshot/mobile-view.png)
 
 ### Links
 
