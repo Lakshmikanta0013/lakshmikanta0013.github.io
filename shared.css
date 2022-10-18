@@ -29,8 +29,14 @@
     --clr-grey-900: hsl(240, 11%, 38%);
 }
 
+html {
+    width: 100%;
+    height: 100vh;
+}
 
 body {
+    width: 100%;
+    height: 100%;
     background-color: var(--clr-bg);
     font-family: var(--ff-primary);
     display: grid;
