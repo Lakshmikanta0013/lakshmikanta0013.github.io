@@ -31,3 +31,12 @@ body {
 header nav {
     background: linear-gradient(45deg, var(--clr-bg), transparent);
 }
+
+.h1 {
+    font-family: var(--ff-header);
+    font-weight: var(--fw-bold);
+    font-size: calc(3rem + 1.2vw);
+    text-align: center;
+    color: var(--clr-fg-light);
+    text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.51);
+}
