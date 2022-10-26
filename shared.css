@@ -25,7 +25,7 @@
     --clr-bg: hsl(136, 83%, 96%);
     --clr-fg-light: hsl(255, 100%, 97%);
     --clr-fg-dark: hsl(240, 7%, 11%);
-    --clr-primary: hsl(161, 86%, 56%);
+    --clr-primary: #2eefb2;
     --clr-red: hsl(353, 92%, 64%);
     --clr-green: hsl(120, 81%, 73%);
     --clr-blue: hsl(249, 81%, 73%);
@@ -44,7 +44,7 @@
     --clr-gray-900: hsl(210, 11%, 15%);
 
     /* Annimation */
-    --transition: 0.25s ease-in-out;
+    --transition: 250ms ease-in-out;
 }
 
 /* ============ UTILITY CLASSES ============ */
@@ -96,7 +96,7 @@
     transition: all var(--transition);
 }
 
-.link:after {
+.link:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -113,7 +113,7 @@
     color: var(--clr-primary);
 }
 
-.link:where(:hover, :active):after {
+.link:where(:hover, :active):before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -125,7 +125,7 @@
     outline: none;
     font-family: var(--ff-primary);
     font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     background: linear-gradient(45deg, rgba(0, 229, 255, 1) 0%, rgba(48, 240, 178, 1) 50%);
     color: var(--clr-dark);
     padding: 0.625rem 1.2rem;
@@ -169,7 +169,7 @@ header {
     background-color: var(--clr-gray-600);
     grid-area: header;
     width: 100%;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     /* min-height: 4.8rem; */
 }
 
@@ -190,30 +190,29 @@ header {
 
 .logo svg {
     fill: var(--clr-fg-light);
-    width: max(22rem, 20vw);
-    transition: all var(--transition);
+    height: max(1.8rem, 2vw);
+    transition: fill 200ms ease-in-out;
 }
 
-.logo:after {
+.logo:before {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 3px;
-    bottom: -15%;
+    height: 2px;
+    bottom: -5%;
     left: 0;
     background-color: var(--clr-primary);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 200ms ease-out;
 }
 
 .logo svg:where(:hover, :active, :focus) {
     fill: var(--clr-primary);
 }
 
-.logo:where(:hover, :active):after {
+.logo:where(:hover, :active):before {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin: center;
 }
 
 .main-nav {
