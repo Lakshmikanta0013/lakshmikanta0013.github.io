@@ -121,7 +121,7 @@ main section {
     background: linear-gradient(135deg, #1F4EE4 0%, #E60115 100%);
     width: 100%;
     min-height: 90vh;
-    max-height: 50rem;
+    max-height: 52rem;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 2rem;
