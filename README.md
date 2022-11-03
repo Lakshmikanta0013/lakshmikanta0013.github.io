@@ -12,4 +12,3 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lakshmikanta0013&show_icons=true&locale=en" alt="lakshmikanta0013" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lakshmikanta0013&" alt="lakshmikanta0013" /></p>
-
