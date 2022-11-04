@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Link](https://github.com/Lakshmikanta0013/lakshmikanta0013.github.io/tree/main/projects/testimonials-grid-section-main)
-- Live Site URL: [live site](https://lakshmikanta0013.github.io/projects/testimonials-grid-section-main)
+- Solution URL: [Github Link](https://github.com/frontendfixer/frontendfixer.github.io/tree/main/projects/testimonials-grid-section-main)
+- Live Site URL: [live site](https://frontendfixer.github.io/projects/testimonials-grid-section-main)
 
 ## My process
 
@@ -48,12 +48,10 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-
 ## Author
 
 - Website - [](#)
-- Frontend Mentor - [@Lakshmikanta0013](https://www.frontendmentor.io/profile/Lakshmikanta0013)
-
+- Frontend Mentor - [@frontendfixer](https://www.frontendmentor.io/profile/frontendfixer)
 
 ## Acknowledgments
 
