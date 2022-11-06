@@ -24,7 +24,7 @@
   --clr-bg: hsl(136, 83%, 96%);
   --clr-fg-light: hsl(255, 100%, 97%);
   --clr-fg-dark: hsl(240, 7%, 11%);
-  --clr-primary: #2eefb2;
+  --clr-primary: #2ef0b2;
   --clr-red: hsl(353, 92%, 64%);
   --clr-green: hsl(120, 81%, 73%);
   --clr-blue: hsl(249, 81%, 73%);
@@ -48,8 +48,8 @@
 
 /* ============ UTILITY CLASSES ============ */
 .container {
-  width: 90vw;
-  margin: 3.2rem auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .flex {
@@ -143,6 +143,7 @@
 html {
   width: 100%;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -227,17 +228,236 @@ header {
 
 main {
   grid-area: main;
+  margin-block: 3.2rem;
 }
 
+/* Footer styling +++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++*/
+
 footer {
+  scroll-behavior: smooth;
   grid-area: footer;
   background-color: var(--clr-dark);
   color: var(--clr-fg-light);
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
-footer p {
+/* Footer contact form ++++++++++++++++++++++++++++ */
+
+#contact-area {
+  flex-direction: column;
+  justify-content: center;
+  --gap: 2rem;
+  /* margin-block: 1.2rem; */
+}
+
+@media (min-width: 1007px) {
+  #contact-area {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+#contact-area > * {
+  flex: 1;
+}
+/* ========== Footer contact form "Address" ====== */
+
+.address {
+  width: 100vw;
+  height: 100%;
+  margin-top: 2rem;
+  background-color: var(--clr-gray-900);
+  padding: 1.6rem 1rem;
+  transform: translateY(-2rem);
+}
+
+.address-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.6rem;
+  padding-inline: calc(3rem + 2vw);
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.address-icon {
+  list-style: none;
+  display: inline-block;
+  width: 3.2rem;
+}
+
+.address-icon img {
+  filter: invert(68%) sepia(82%) saturate(378%) hue-rotate(104deg)
+    brightness(97%) contrast(98%);
+
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: 2px solid var(--clr-gray-500);
+}
+
+.address-list h2 {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-light);
+  letter-spacing: 2px;
+  color: var(--clr-fg-light);
+}
+
+/* ========== Footer contact form "Contact Us" ====== */
+.contact-form {
+  width: 100%;
+  max-width: 42rem;
+  margin-block: calc(1.2rem + 1.2vw);
+}
+
+.contact-form-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.4rem;
+  background-color: var(--clr-gray-900);
+  color: var(--clr-primary);
+  padding-block: 1.2rem;
+  margin-bottom: 3rem;
+  border: 0.2rem solid var(--clr-primary);
+  border-radius: 0.4rem;
+}
+
+.contact-form-list-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: calc(2rem - 1.2vw);
+}
+
+.contact-form-list-item {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+.contact-form-list-item input {
+  width: 100%;
+  background-color: transparent;
+  color: var(--clr-dark);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1;
+  letter-spacing: 1px;
+  padding: 0.6rem 1.6rem;
+  /* margin-block: 1rem; */
+  /* border-bottom: 2px solid var(--clr-primary); */
+}
+
+.contact-form-list-item span {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  bottom: 1.2rem;
+  left: 0;
+  font-size: var(--fs-body);
+  line-height: 1;
+  /* padding-left: 1.2rem; */
+  color: var(--clr-gray-700);
+  transition: transform 400ms ease-in-out, font-size 300ms ease-in-out,
+    color 250ms ease;
+}
+
+.contact-form-list-item input:where(:focus, :valid) ~ span {
+  transform: translateY(-1.8rem);
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
+.contact-form-list-item i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.2rem;
+  z-index: -1;
+  background-color: var(--clr-primary);
+  pointer-events: none;
+  transition: height 400ms ease-in-out;
+}
+
+.contact-form-list-item input:where(:focus, :valid) ~ i {
+  height: 3.2rem;
+  border-radius: 0.4rem;
+}
+
+.contact-form-list-item-message {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-top: 1rem;
+}
+
+.contact-form-list-item-message textarea {
+  width: 100%;
+  background-color: transparent;
+  color: var(--clr-fg-light);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: 2px solid var(--clr-primary);
+}
+
+.contact-form-list-item-message span {
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  font-size: var(--fs-body);
+  line-height: 1;
+  padding-left: 1.2rem;
+  color: var(--clr-gray-700);
+  transition: transform 400ms ease-in-out, font-size 300ms ease-in-out,
+    color 250ms ease;
+}
+
+.contact-form-list-item-message textarea:where(:focus, :valid) ~ span {
+  transform: translate(-1.2rem, -3rem);
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
+.contact-form-button {
+  width: 100%;
+  background-color: var(--clr-primary);
+  color: var(--clr-dark);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--ff-primary);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  padding: 1rem 0;
+  margin-top: 1.2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.contact-form-button:where(:hover, :active) {
+  background-color: transparent;
+  color: var(--clr-fg-light);
+  border: 2px solid var(--clr-primary);
+}
+/* ========== Footer contact form "Contact Us" ====== */
+
+/* Footer contact form ++++++++++++++++++++++++++++ */
+
+.footer-credit {
   font-family: var(--ff-primary);
   font-weight: var(--fw-light);
   text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--clr-gray-800);
 }
+/* Footer styling ++++++++++++++++++++++++++++ 
+++++++++++++++++++++++++++++++++++++++++++++++*/
