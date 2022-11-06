@@ -288,7 +288,8 @@ footer {
 }
 
 .address-icon img {
-  filter: invert(68%) sepia(82%) saturate(378%) hue-rotate(104deg)
+  flex-shrink: 0;
+filter: invert(68%) sepia(82%) saturate(378%) hue-rotate(104deg)
     brightness(97%) contrast(98%);
 
   padding: 0.4rem;
