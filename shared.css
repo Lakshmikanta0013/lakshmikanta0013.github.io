@@ -285,6 +285,7 @@ footer {
   list-style: none;
   display: inline-block;
   width: 3.2rem;
+  flex-shrink: 0;
 }
 
 .address-icon img {
