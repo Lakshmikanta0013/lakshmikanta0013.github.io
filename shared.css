@@ -87,7 +87,6 @@
   position: relative;
   color: var(--clr-blue);
   font-family: var(--ff-monospace);
-  letter-spacing: -0.5px;
   transition: all var(--transition);
 }
 
@@ -255,6 +254,7 @@ footer {
   #contact-area {
     flex-direction: row;
     flex-wrap: nowrap;
+    --gap: 5rem;
   }
 }
 
@@ -264,45 +264,52 @@ footer {
 /* ========== Footer contact form "Address" ====== */
 
 .address {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
   margin-top: 2rem;
   background-color: var(--clr-gray-900);
-  padding: 1.6rem 1rem;
-  transform: translateY(-2rem);
+  padding: 1.6rem 2rem;
+  border-radius: 1rem;
+  /* transform: translateY(-2rem); */
 }
 
 .address-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 1.6rem;
-  padding-inline: calc(3rem + 2vw);
+  padding-bottom: calc(1rem + 2vw);
   align-items: center;
-  margin-bottom: 2.4rem;
 }
 
 .address-icon {
   list-style: none;
   display: inline-block;
-  width: 3.2rem;
-  flex-shrink: 0;
+  flex-shrink: 0;
+
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--clr-gray-800);
+  border-radius: 5rem;
+  box-shadow: 0 0 5px 1px var(--clr-gray-700);
 }
 
 .address-icon img {
-  width:100%;
-filter: invert(68%) sepia(82%) saturate(378%) hue-rotate(104deg)
-    brightness(97%) contrast(98%);
-
-  padding: 0.4rem;
-  border-radius: 0.4rem;
-  border: 2px solid var(--clr-gray-500);
+  padding: 0.5rem;
 }
 
 .address-list h2 {
-  font-size: var(--fs-400);
-  font-weight: var(--fw-light);
-  letter-spacing: 2px;
-  color: var(--clr-fg-light);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--clr-gray-400);
+}
+
+.address-list .link {
+  letter-spacing: 1px;
+  color: var(--clr-blue);
+  transition: color 200ms ease;
+}
+
+.address-list .link:where(:hover, :focus, :active) {
+  color: var(--clr-primary);
 }
 
 /* ========== Footer contact form "Contact Us" ====== */
@@ -323,7 +330,7 @@ filter: invert(68%) sepia(82%) saturate(378%) hue-rotate(104deg)
   color: var(--clr-primary);
   padding-block: 1.2rem;
   margin-bottom: 3rem;
-  border: 0.2rem solid var(--clr-primary);
+  border-bottom: 0.2rem solid var(--clr-primary);
   border-radius: 0.4rem;
 }
 
@@ -441,6 +448,7 @@ filter: invert(68%) sepia(82%) saturate(378%) hue-rotate(104deg)
   padding: 1rem 0;
   margin-top: 1.2rem;
   border-radius: 0.8rem;
+  outline: none;
   cursor: pointer;
   transition: all 250ms ease-in-out;
 }
