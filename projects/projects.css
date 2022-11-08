@@ -54,6 +54,65 @@ main .container {
   transform: scale(1.08);
 }
 
+.overlay {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 40%;
+  transform: translateY(-30%);
+}
+.overlay-img {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.overlay-img img {
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
+@media (min-width: 640px) {
+  .overlay {
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+
+  .overlay-img img {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1007px) {
+  .overlay {
+    width: fit-content;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+
+  .overlay-img img {
+    width: auto;
+    height: 80vh;
+  }
+}
+.overlay-img a {
+  width: calc(32px + 1vw);
+  height: calc(32px + 1vw);
+  position: absolute;
+  top: calc(-15% + 1vw);
+  right: 0;
+  color: var(--clr-primary);
+  transition: border 250ms ease-in-out;
+}
+
+.overlay-img a:where(:hover, :focus) {
+  border: 2px solid black;
+}
+
 .content {
   width: 90%;
 }

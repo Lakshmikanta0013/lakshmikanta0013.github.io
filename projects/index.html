@@ -14,6 +14,8 @@
     <link href="./projects.css" rel="stylesheet" type="text/css">
     <!-- -------- -->
 
+    <!-- JAVASCRIPT FILES -->
+    <script defer src="./project.js"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +29,7 @@
 </head>
 
 <body>
+    <div class="backdrop visually-hidden"></div>
     <header class=" header flex">
         <div class="hero">
             <a class=" logo" href="../">
@@ -70,10 +73,17 @@
     <main>
         <div class="container grid">
 
+            <!----------------- Card 1 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./3-column-preview-card-component-main/screenshot/desktop-view.webp"
-                        alt="3-column-preview-card-component screenshot">
+                    <a class="card-image"><img src="./3-column-preview-card-component-main/screenshot/desktop-view.webp"
+                        alt="3-column-preview-card-component screenshot"></a>
+                </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./3-column-preview-card-component-main/screenshot/desktop-view.webp" alt="3-column-preview-card-component screenshot">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
                 </div>
                 <div class="content">
                     <h1 class="project-heading">3-column preview card component</h1>
@@ -88,10 +98,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 2 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./NFT-preview-card-component/screenshot/desktop-view.webp"
-                        alt="NFT preview card component screenshot">
+                    <a class="card-image"><img src="./NFT-preview-card-component/screenshot/desktop-view.webp"
+                        alt="NFT-preview-card-component screenshot"></a>
+                </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./NFT-preview-card-component/screenshot/desktop-view.webp"
+                        alt="NFT-preview-card-component screenshot">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
                 </div>
                 <div class="content">
                     <h1 class="project-heading">NFT preview card component</h1>
@@ -106,11 +124,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 3 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./order-summary-component/screenshot/desktop-view.webp"
-                        alt="order summary component screenshot">
+                    <a class="card-image"><img src="./order-summary-component/screenshot/desktop-view.webp"
+                        alt="order summary component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./order-summary-component/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">order summary component</h1>
                     <div class="links">
@@ -124,12 +149,19 @@
                 </div>
             </div>
 
+            <!----------------- Card 4 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./product-preview-card/screenshot/desktop-view.webp"
-                        alt="product preview card screenshot">
+                    <a class="card-image"><img src="./product-preview-card/screenshot/desktop-view.webp"
+                        alt="product preview card screenshot"></a>
                 </div>
 
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./product-preview-card/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">product preview card</h1>
                     <div class="links">
@@ -143,10 +175,17 @@
                 </div>
             </div>
 
+            <!----------------- Card 5 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./qr-code-component/screenshot/desktop-view.webp" alt="qr-code-component screenshot">
+                    <a class="card-image"><img src="./qr-code-component/screenshot/desktop-view.webp" alt="qr-code-component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./qr-code-component/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">qr code component</h1>
                     <div class="links">
@@ -160,11 +199,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 6 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./stats-preview-card-component/screenshot/desktop-view.webp"
-                        alt="stats-preview-card-component screenshot">
+                    <a class="card-image"><img src="./stats-preview-card-component/screenshot/desktop-view.webp"
+                        alt="stats-preview-card-component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./stats-preview-card-component/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">stats preview card component</h1>
                     <div class="links">
@@ -178,11 +224,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 7 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./testimonials-grid-section-main/screenshot/desktop-view.webp"
-                        alt="3-column-preview-card-component screenshot">
+                    <a class="card-image"><img src="./testimonials-grid-section-main/screenshot/desktop-view.webp"
+                        alt="3-column-preview-card-component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./testimonials-grid-section-main/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">testimonials grid section</h1>
                     <div class="links">
@@ -196,11 +249,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 8 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./mobile-call-screen/screenshot/desktop-view.webp"
-                        alt="3-column-preview-card-component screenshot">
+                    <a class="card-image"><img src="./mobile-call-screen/screenshot/desktop-view.webp"
+                        alt="3-column-preview-card-component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./mobile-call-screen/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">mobile call screen</h1>
                     <div class="links">
@@ -214,11 +274,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 9 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./profile-card-component/screenshot/desktop-view.webp"
-                        alt="3-column-preview-card-component screenshot">
+                    <a class="card-image"><img src="./profile-card-component/screenshot/desktop-view.webp"
+                        alt="3-column-preview-card-component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./profile-card-component/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">Guess-My-Number</h1>
                     <div class="links">
@@ -232,11 +299,18 @@
                 </div>
             </div>
 
+            <!----------------- Card 10 ----------------->
             <div class="card">
                 <div class="image">
-                    <img src="./Guess-My-Number/screenshot/desktop-view.webp"
-                        alt="Guess-My-Number screenshot">
+                    <a class="card-image"><img src="./Guess-My-Number/screenshot/desktop-view.webp"
+                        alt="Guess-My-Number screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./Guess-My-Number/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">Guess-My-Number</h1>
                     <div class="links">
@@ -253,11 +327,19 @@
             <!-- +++++++++++++++++++++++++++++++++++++++++++++
             +++++++++++++++++ Demo +++++++++++++++++++++++++++
             ++++++++++++++++++++++++++++++++++++++++++++++ -->
+            
+            <!----------------- Card 0 ----------------->
             <div class="card demo">
                 <div class="image">
-                    <img src="./testimonials-grid-section-main/screenshot/desktop-view.webp"
-                        alt="3-column-preview-card-component screenshot">
+                    <a class="card-image"><img src="./testimonials-grid-section-main/screenshot/desktop-view.webp"
+                        alt="3-column-preview-card-component screenshot"></a>
                 </div>
+                <div class="overlay hidden">
+                    <div class="overlay-img">
+                        <img src="./testimonials-grid-section-main/screenshot/desktop-view.webp" alt="">
+                        <a class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg></a>
+                    </div>
+                    </div>
                 <div class="content">
                     <h1 class="project-heading">testimonials grid section</h1>
                     <div class="links">
@@ -271,7 +353,7 @@
                 </div>
             </div>
             <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
+        </div>
     </main>
     <footer>
         <div id="contact-area" class="container flex">
