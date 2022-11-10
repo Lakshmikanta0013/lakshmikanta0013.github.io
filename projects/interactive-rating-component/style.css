@@ -143,9 +143,12 @@ main {
   box-shadow: 0 0 5px 0 var(--clr-dark-blue);
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
-.rating ul li button:hover {
-  background-color: var(--clr-primar-orange);
-  color: var(--clr-white);
+
+@media (hover: hover) {
+  .rating ul li button:hover {
+    background-color: var(--clr-primar-orange);
+    color: var(--clr-white);
+  }
 }
 
 .rating ul li button:focus {
