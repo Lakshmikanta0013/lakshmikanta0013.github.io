@@ -36,16 +36,31 @@
         align-items: center;
         background: linear-gradient(
           to bottom right,
-          var(--clr-green) 20%,
-          var(--clr-primary)
+          var(--clr-primary),
+          var(--clr-green)
         );
         margin: 0;
         padding: 0;
       }
       .h1 {
-        color: white;
-        text-shadow: 4px 4px 8px rgb(0 0 0 / 0.4);
-        font-size: calc(3rem + 2vw);
+        color: #fff;
+        font-size: calc(5rem + 2vw);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: -2px -1px var(--clr-red), -1px -2px var(--clr-red),
+          -1px 0 var(--clr-red), 0 1px var(--clr-red), 1px 0 var(--clr-red),
+          0 -1px var(--clr-red), 1px 0px 1px var(--clr-red),
+          0px 1px 1px var(--clr-red), 2px 1px 1px var(--clr-red),
+          1px 2px 1px var(--clr-red), 3px 2px 1px var(--clr-red),
+          2px 3px 1px var(--clr-red), 4px 3px 1px var(--clr-red),
+          3px 4px 1px var(--clr-red), 5px 4px 1px var(--clr-red),
+          4px 5px 1px var(--clr-red), 6px 5px 1px var(--clr-red),
+          5px 6px 1px var(--clr-red), 7px 6px 1px var(--clr-red),
+          6px 7px 1px var(--clr-red), 8px 7px 1px var(--clr-red),
+          7px 8px 1px var(--clr-red), 9px 8px 1px var(--clr-red),
+          8px 9px 1px var(--clr-red), 10px 9px 1px var(--clr-red),
+          9px 10px 1px var(--clr-red);
+        transform: skew(0deg, -8deg);
       }
     </style>
   </head>
@@ -112,7 +127,7 @@
     </header>
     <main>
       <div class="container">
-        <h1 class="h1">Welcome to my website!</h1>
+        <h1 class="h1">Welcome <br />to my website</h1>
       </div>
     </main>
     <footer>
