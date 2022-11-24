@@ -5,9 +5,9 @@
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Ubuntu Mono', monospace; */
 
-  --ff-header: "Acme", sans-serif;
-  --ff-primary: "Ubuntu", sans-serif;
-  --ff-monospace: "Ubuntu Mono", monospace;
+  --ff-header: 'Acme', sans-serif;
+  --ff-primary: 'Ubuntu', sans-serif;
+  --ff-monospace: 'Ubuntu Mono', monospace;
   font-size: 62.5%;
   --fs-body: 1.6rem;
   --fs-header: calc(2rem + 1.2vw);
@@ -24,7 +24,7 @@
   --clr-bg: hsl(136, 83%, 96%);
   --clr-fg-light: hsl(255, 100%, 97%);
   --clr-fg-dark: hsl(240, 7%, 11%);
-  --clr-primary: #2ef0b2;
+  --clr-primary: hsl(161, 87%, 56%);
   --clr-red: hsl(353, 92%, 64%);
   --clr-green: hsl(120, 81%, 73%);
   --clr-blue: hsl(249, 81%, 73%);
@@ -117,7 +117,7 @@
 }
 
 .link:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -183,9 +183,9 @@ body {
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    'header'
+    'main'
+    'footer';
   justify-content: center;
   align-items: center;
 }
@@ -220,7 +220,7 @@ header {
 }
 
 .logo:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
