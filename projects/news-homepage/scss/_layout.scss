@@ -1,0 +1,128 @@
+@use './components' as *;
+
+body {
+  background-color: var(--clr-white);
+  font-size: rem(15px);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(5px);
+  z-index: 90;
+}
+
+.root {
+  // background-color: var(--clr-blue-10);
+  width: auto;
+  min-height: 100vh;
+  margin-inline: 5%;
+  margin-block-start: 3%;
+  margin-block-end: 5%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  place-content: center;
+
+  position: relative;
+}
+
+header {
+  width: 100%;
+  margin-block-end: rem(30px);
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__navbar {
+    .main-nav {
+      transition: all 250ms ease-in-out;
+      ul {
+        display: flex;
+      }
+      .nav-link {
+        display: inline-block;
+        padding: rem(4px) rem(15px);
+        font-size: rem(18px);
+        font-weight: var(--fw-bold);
+        color: var(--clr-blue-50);
+        transition: color 250ms ease;
+        &:where(:hover, :focus) {
+          color: var(--clr-red-50);
+          outline: 1px dotted var(--clr-red-50);
+        }
+      }
+    }
+    .nav-toggle {
+      display: none;
+      width: fit-content;
+      padding: rem(5px);
+      border: 2px solid black;
+      position: relative;
+      z-index: 100;
+    }
+
+    @include mq-max(small) {
+      .main-nav {
+        background-color: var(--clr-white);
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 99;
+
+        transform: translateX(100%);
+        opacity: 0;
+        transform-origin: center;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      ul {
+        flex-direction: column;
+        margin-block-start: min(rem(100px), 25vh);
+        margin-inline-start: rem(20px);
+        > * + * {
+          margin-top: rem(20px);
+        }
+      }
+      .active.main-nav {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+      .nav-toggle {
+        display: block;
+      }
+    }
+  }
+}
+
+.hero {
+  &__main {
+    width: 100%;
+    display: grid;
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url(../fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --clr-red-50: hsl(5, 85%, 63%);
+  --clr-oranges-50: hsl(35, 77%, 62%);
+
+  --clr-white: hsl(36, 100%, 99%);
+  --clr-blue-10: hsl(233, 8%, 79%);
+  --clr-blue-50: hsl(236, 13%, 42%);
+  --clr-blue-90: hsl(240, 100%, 5%);
+}
