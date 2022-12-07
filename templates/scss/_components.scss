@@ -3,9 +3,9 @@
 /*========== Mixin and Functions ============*/
 
 $breakpoints-min: (
-  'small': 43em,
-  'medium': 62em,
-  'large': 82em,
+  'small': 44em,
+  'medium': 63em,
+  'large': 80em,
 ) !default;
 
 @mixin mq-min($breakpoint) {
@@ -17,9 +17,9 @@ $breakpoints-min: (
 }
 
 $breakpoints-max: (
-  'small': 42.99em,
-  'medium': 61.99em,
-  'large': 81.99em,
+  'small': 43.99em,
+  'medium': 62.99em,
+  'large': 79.99em,
 ) !default;
 @mixin mq-max($breakpoint) {
   @if map-has-key($breakpoints-max, $breakpoint) {
@@ -48,9 +48,4 @@ $html-font-size: 16px;
 @function em($Value) {
   $remValue: math.div($Value, $html-font-size) + em;
   @return $remValue;
-}
-
-// ++++++++++++ Shadow ++++++++++++++
-@function shadow($opacity) {
-  @return rgba(0 0 0 / $opacity);
 }
