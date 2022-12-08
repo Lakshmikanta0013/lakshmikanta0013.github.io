@@ -210,7 +210,7 @@ header {
       flex-direction: column;
       gap: calc(rem(20px) - 0.4vw);
       justify-content: space-between;
-      h3 {
+      h2 {
         font-size: clamp(rem(24px), 2.5vw, rem(40px));
         color: var(--clr-orange-50);
       }
