@@ -46,17 +46,6 @@ const path = {
 function imgTask() {
   return src(path.img.src)
     .pipe(changed(path.img.dest))
-    .pipe(
-      imagemin([
-        imagemin.mozjpeg({
-          quality: 80,
-          progressive: true,
-        }),
-        imagemin.optipng({
-          optimizationLevel: 5,
-        }),
-      ])
-    )
     .pipe(webp({ quality: 50 }))
     .pipe(dest(path.img.dest));
 }
@@ -76,7 +65,7 @@ function htmlTask() {
         collapseWhitespace: true,
         minifyCSS: true,
         minifyJS: true,
-        preserveLineBreaks: true,
+        preserveLineBreaks: false,
         removeComments: true,
       })
     )
@@ -135,8 +124,8 @@ function browsersyncReload(cb) {
 // Watch Task
 function watchTask() {
   watch(
-    ['./img/*.{jpg,png}', './*.html', './scss/**/*.scss', './js/**/*.js'],
-    series(imgTask, htmlTask, scssTask, jsTask, browsersyncReload)
+    ['./*.html', './scss/**/*.scss', './js/**/*.js'],
+    series(htmlTask, scssTask, jsTask, browsersyncReload)
   );
 }
 
