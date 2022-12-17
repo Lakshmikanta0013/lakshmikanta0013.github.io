@@ -85,7 +85,7 @@ export function cssTask() {
     }),
   ];
   return src(path.css.src, { sourcemaps: true })
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(GulpPostCss(plugins))
     .pipe(dest(path.css.dest, { sourcemaps: '.' }));
 }

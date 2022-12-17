@@ -1,6 +1,6 @@
-@import 'https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap';
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"); /*========== Mixin and Functions ============*/
 :root {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   --fs-body: 0.8125rem;
   --fw-bold: 700;
   --fw-regular: 500;
@@ -11,6 +11,9 @@
   --border: 0.5rem;
   --transition: 250ms ease-in-out;
 }
+
+/*+++++++ CSS Reset ++++++++++++*/
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -18,26 +21,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Set core root defaults */
 html[focus-within] {
   scroll-behavior: smooth;
 }
 html:focus-within {
   scroll-behavior: smooth;
 }
+
+/* Set core body defaults */
 body {
   width: 100%;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
+
+/* A elements that don't have a class get default styles */
 a,
 a:not([class]) {
   text-decoration: none;
 }
+
+/* Make images easier to work with */
 img {
   max-width: 100%;
   display: block;
 }
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html[focus-within] {
     scroll-behavior: auto;
@@ -54,13 +67,16 @@ img {
     scroll-behavior: auto !important;
   }
 }
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .text-up {
   text-transform: uppercase;
 }
+
 .date {
   color: hsl(212, 23%, 69%);
   color: var(--clr-blue-50);
 }
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -74,6 +90,7 @@ img {
   transition: all 250ms ease-in-out;
   transition: all var(--transition);
 }
+
 body {
   display: grid;
   align-content: center;
@@ -87,10 +104,7 @@ body {
   color: var(--clr-blue-90);
   font-weight: var(--fs-regular);
 }
-.root {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+
 .backdrop {
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
@@ -108,8 +122,9 @@ body {
   display: block;
   z-index: 10;
 }
+
 .card {
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   width: min(86%, 45.75rem);
   margin-left: auto;
   margin-right: auto;
@@ -124,7 +139,7 @@ body {
   border-radius: 0.5rem;
   border-radius: var(--border, 0.5rem);
   overflow: hidden;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.3);
   position: relative;
 }
 @media only screen and (min-width: 44em) {
@@ -144,6 +159,7 @@ body {
   }
 }
 .card__image img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -177,11 +193,11 @@ body {
   }
 }
 @media only screen and (min-width: 44em) {
-  .card__body:dir(ltr) {
+  .card__body:dir(ltr){
     margin-left: 0;
     margin-right: 2.5rem;
   }
-  .card__body:dir(rtl) {
+  .card__body:dir(rtl){
     margin-right: 0;
     margin-left: 2.5rem;
   }
@@ -208,9 +224,8 @@ body {
 .card .avater__description img {
   width: 2.5rem;
   border-radius: 50%;
-  outline: 1px solid hsl(212, 23%, 69%);
-  outline: 1px solid var(--clr-blue-50);
-  outline-offset: 0.125rem;
+  border: 2px solid hsl(212, 23%, 69%);
+  border: 2px solid var(--clr-blue-50);
 }
 .card .avater__description .details h2 {
   letter-spacing: 1px;
