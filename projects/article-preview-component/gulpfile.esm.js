@@ -20,25 +20,25 @@ const browsersync = require('browser-sync').create();
 //+++++++++ PATH ++++++++++++
 const path = {
   html: {
-    src: './assets/src/index.html',
+    src: './src/index.html',
     dest: './dist/',
   },
   css: {
-    src: ['./assets/src/scss/style.scss'],
+    src: ['./src/assets/scss/style.scss'],
     dest: './dist/assets/css/',
   },
 
   js: {
     src: [
-      './assets/src/js/dom-selector.js',
-      './assets/src/js/component.js',
-      './assets/src/js/main.js',
+      './src/assets/js/dom-selector.js',
+      './src/assets/js/component.js',
+      './src/assets/js/main.js',
     ],
     dest: './dist/assets/js/',
   },
   img: {
-    src: ['./assets/src/img/*.{jpg,png}'],
-    srcAll: ['./assets/src/img/*'],
+    src: ['./src/assets/img/*.{jpg,png}'],
+    srcAll: ['./src/assets/img/*'],
     dest: './dist/assets/img/',
   },
   screenshot: {
@@ -126,7 +126,7 @@ function browsersyncReload(cb) {
 //+++++++++ Watch Task +++++++++++
 function watchTask() {
   watch(
-    ['./src/*.html', './src/scss/**/*.scss', './src/js/**/*.js'],
+    ['./src/*.html', './src/assets/scss/**/*.scss', './src/assets/js/**/*.js'],
     series(htmlTask, cssTask, jsTask, browsersyncReload)
   );
 }
