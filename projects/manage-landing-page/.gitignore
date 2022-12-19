@@ -1,0 +1,8 @@
+# Uncomment this to ignore upload of this folders anf files
+# ++++++++++++++++++++++++++
+*.json
+node_modules
+.babelrc
+.browserslistrc
+.prettierrc
+gulpfile.esm.js

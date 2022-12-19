@@ -1,0 +1,23 @@
+@use './mixin' as *;
+
+/*===============================================
+================== VARIABLE =====================
+=================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;500;700&display=swap');
+//     font-family: 'Be Vietnam Pro', sans-serif;
+
+:root {
+  --clr-red-50: hsl(12, 88%, 59%);
+  --clr-red-30: hsl(13, 100%, 96%);
+  --clr-blue-90: hsl(233, 12%, 13%);
+  --clr-blue-70: hsl(228, 39%, 23%);
+  --clr-blue-30: hsl(227, 12%, 61%);
+  -clr-gray-30: hsl(0, 0%, 98%);
+
+  --ff-primary: 'Be Vietnam Pro', sans-serif;
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+  --fs-body: 1rem;
+}
