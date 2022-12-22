@@ -7,12 +7,14 @@
 //     font-family: 'Be Vietnam Pro', sans-serif;
 
 :root {
-  --clr-red-50: hsl(12, 88%, 59%);
-  --clr-red-30: hsl(13, 100%, 96%);
+  --clr-red-50: rgb(242, 95, 58);
+  --clr-red-30: hsl(12, 88%, 90%);
+  --clr-red-10: hsl(13, 100%, 96%);
   --clr-blue-90: hsl(233, 12%, 13%);
   --clr-blue-70: hsl(228, 39%, 23%);
   --clr-blue-30: hsl(227, 12%, 61%);
-  -clr-gray-30: hsl(0, 0%, 98%);
+  --clr-gray-30: hsl(0, 0%, 98%);
+  --white: hsl(0 0% 100%);
 
   --ff-primary: 'Be Vietnam Pro', sans-serif;
   --fw-light: 200;
@@ -20,4 +22,9 @@
   --fw-semi-bold: 500;
   --fw-bold: 700;
   --fs-body: 1rem;
+
+  // Spacing
+  --gutter-l: clamp(1.25rem, 2.25vw, 2rem);
+  --gutter-xl: clamp(1.875rem, 3vw, 2.625rem);
+  --gutter-xxl: clamp(2.5rem, 5vw, 3.52rem);
 }

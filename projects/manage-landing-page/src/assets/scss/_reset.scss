@@ -35,12 +35,26 @@ a,
 a:not([class]) {
   text-decoration: none;
 }
+a:focus {
+  outline: 2px dotted var(--clr-red-50);
+  outline-offset: 3px;
+}
 
 //  Make images easier to work with
 img,
 picture {
   width: 100%;
   display: block;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+}
+
+input {
+  font: inherit;
 }
 
 // Remove all animations, transitions and smooth scroll for people that prefer not to see them
@@ -61,4 +75,3 @@ picture {
 /*===============================================
 ================ MAIN LAYOUT ====================
 ===============================================*/
-

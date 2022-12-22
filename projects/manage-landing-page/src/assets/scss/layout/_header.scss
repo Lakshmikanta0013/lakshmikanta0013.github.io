@@ -1,2 +1,38 @@
 @use '../mixin' as *;
 /*================ Header Styling ================*/
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    @include mq-max(medium) {
+      display: none;
+    }
+    .nav-list {
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem(20px);
+    }
+    .nav-link {
+      transition: color 250ms ease;
+      &:where(:hover, :focus) {
+        color: var(--clr-blue-30);
+        text-decoration: wavy;
+      }
+    }
+  }
+}
+
+.sprite-logo {
+  width: 150px;
+  height: 30px;
+}
