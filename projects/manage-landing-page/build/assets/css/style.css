@@ -269,39 +269,39 @@ body {
 }
 
 .carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
+  text-align: center;
 }
 .carousel > h2 {
   font-size: clamp(1.625rem, 2.638vw, 2.375rem);
 }
 .carousel-items {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gutter-xxl);
-  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min(90%, 23.4375rem);
+  grid-auto-rows: 1fr;
+  margin-block-start: var(--gutter-l);
+  margin-block-end: var(--gutter-xl);
+  overflow-x: scroll;
 }
 .carousel-item {
   width: min(90%, 23.4375rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--clr-gray-30);
-  padding: 1.25rem;
+  margin-inline: auto;
 }
 .carousel-item .profile-img {
   width: 4rem;
-  margin-top: -3.25rem;
+  position: relative;
+  top: 2rem;
+  margin-inline: auto;
 }
-.carousel-item .name {
-  margin-block: var(--gutter-xl);
+.carousel-content {
+  background-color: var(--clr-gray-30);
+  padding: var(--gutter-xl);
+  padding-top: var(--gutter-xxl);
 }
-.carousel-item .comment {
+.carousel-content .name {
+  margin-block-end: 0.9375rem;
+}
+.carousel-content .comment {
   line-height: 1.5;
   text-align: center;
 }
@@ -584,5 +584,14 @@ svg[class=img] {
 }
 .btn-inverted .btn-link {
   background-color: var(--white);
+}
+
+.slider {
+  display: flex;
+}
+
+.slider > * {
+  width: 100%;
+  flex: 0 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

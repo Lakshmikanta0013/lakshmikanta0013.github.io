@@ -138,3 +138,13 @@ svg[class='img'] {
     background-color: var(--white);
   }
 }
+
+// ============= Slider ==================
+.slider {
+  display: flex;
+}
+
+.slider > * {
+  width: 100%;
+  flex: 0 0 auto;
+}
