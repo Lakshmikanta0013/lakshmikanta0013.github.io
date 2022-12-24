@@ -8,5 +8,4 @@
 gulpfile.esm.js
 .eslintrc.json
 pnpm-lock.yaml
-screenshot
 node_modules
