@@ -1,10 +1,12 @@
 # Uncomment this to ignore upload of this folders anf files
 # ++++++++++++++++++++++++++
+*.psd
 *.json
-node_modules
 .babelrc
 .browserslistrc
 .prettierrc
 gulpfile.esm.js
 .eslintrc.json
 pnpm-lock.yaml
+screenshot
+node_modules
