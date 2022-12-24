@@ -6,7 +6,5 @@ node_modules
 .browserslistrc
 .prettierrc
 gulpfile.esm.js
-yarn-error.log
-yarn.lock
 .eslintrc.json
 pnpm-lock.yaml

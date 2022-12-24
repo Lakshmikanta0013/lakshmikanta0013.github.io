@@ -96,7 +96,26 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   color: var(--clr-blue-90);
-  background-color: var(--clr-red-10);
+  background-color: white;
+  position: relative;
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.body-top {
+  width: 60vw;
+  top: -30vw;
+  right: -20vw;
+}
+
+.body-bottom {
+  width: 60vw;
+  bottom: 50vw;
+  left: -40vw;
 }
 
 /*================ Header Styling ================*/
@@ -362,6 +381,13 @@ body {
 .simplify {
   width: 100%;
   background-color: var(--clr-red-50);
+  position: relative;
+  overflow-y: hidden;
+}
+.simplify .bg-pattern {
+  z-index: 0;
+  width: 83.5vw;
+  bottom: 0;
 }
 .simplify .content {
   width: clamp(19.0625rem, 77.78vw, 70rem);
@@ -624,6 +650,7 @@ svg[class=img] {
 .root {
   width: 100%;
   margin-block-start: var(--gutter-xl);
+  overflow: hidden;
 }
 
 .btn,

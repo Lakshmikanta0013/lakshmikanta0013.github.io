@@ -162,6 +162,13 @@
 .simplify {
   width: 100%;
   background-color: var(--clr-red-50);
+  position: relative;
+  overflow-y: hidden;
+  .bg-pattern {
+    z-index: 0;
+    width: 83.5vw;
+    bottom: 0;
+  }
   .content {
     width: clamp(rem(305px), 77.78vw, rem(1120px));
     margin-inline: auto;
