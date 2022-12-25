@@ -71,9 +71,10 @@
       }
     }
     .nav-link {
+      color: var(--clr-blue-30);
       transition: color 250ms ease;
       &:where(:hover, :focus) {
-        color: var(--clr-blue-30);
+        color: var(--clr-red-50);
         text-decoration: wavy;
       }
     }

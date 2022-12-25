@@ -89,6 +89,26 @@ input {
     scroll-behavior: auto !important;
   }
 }
+/* ============ Scrollbar Styling ================ */
+* {
+  scrollbar-width: 16px;
+  scrollbar-color: var(--clr-red-50) var(--clr-red-30);
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--clr-red-30);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--clr-red-50);
+  border-radius: 20px;
+  border: 2px solid var(--clr-red-50);
+}
+
 /*===============================================
 ================ MAIN LAYOUT ====================
 ===============================================*/
@@ -198,10 +218,11 @@ body {
   }
 }
 .header .navbar .nav-link {
+  color: var(--clr-blue-30);
   transition: color 250ms ease;
 }
 .header .navbar .nav-link:where(:hover, :focus) {
-  color: var(--clr-blue-30);
+  color: var(--clr-red-50);
   text-decoration: wavy;
 }
 
@@ -578,6 +599,11 @@ body {
 
 .fw-b {
   font-weight: var(--fw-bold);
+}
+
+[tabindex]:focus {
+  outline: 2px dotted var(--clr-red-50);
+  outline-offset: 6px;
 }
 
 .backdrop {

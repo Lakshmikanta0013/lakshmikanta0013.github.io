@@ -58,6 +58,11 @@
   font-weight: var(--fw-bold);
 }
 
+[tabindex]:focus {
+  outline: 2px dotted var(--clr-red-50);
+  outline-offset: 6px;
+}
+
 //=========== Display ============
 .backdrop {
   width: 100%;

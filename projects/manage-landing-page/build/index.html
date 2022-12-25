@@ -36,7 +36,7 @@
         <header class="header">
           <!-- Header Logo -->
           <div class="logo">
-            <a href="#">
+            <a href="#" aria-label="logo">
               <svg class="icon sprite-logo">
                 <use href="#logo" />
               </svg>
@@ -52,31 +52,36 @@
                 aria-hidden="true"
               />
             </div>
-            <ul class="nav-list">
+            <ul class="nav-list" aria-label="navigation list">
               <li class="nav-items">
-                <a href="#" class="nav-link">Pricing</a>
+                <a href="#" class="nav-link" aria-label="pricing">Pricing</a>
               </li>
               <li class="nav-items">
-                <a href="#" class="nav-link">Product</a>
+                <a href="#" class="nav-link" aria-label="product">Product</a>
               </li>
               <li class="nav-items">
-                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link" aria-label="about us">About Us</a>
               </li>
               <li class="nav-items">
-                <a href="#" class="nav-link">Careers</a>
+                <a href="#" class="nav-link" aria-label="careers">Careers</a>
               </li>
               <li class="nav-items">
-                <a href="#" class="nav-link">Community</a>
+                <a href="#" class="nav-link" aria-label="community"
+                  >Community</a
+                >
               </li>
             </ul>
             <!-- Button -->
             <div class="btn">
-              <a href="#" class="btn-link">Get Started</a>
+              <a href="#" class="btn-link" aria-label="get started"
+                >Get Started</a
+              >
             </div>
             <!-- /button -->
           </nav>
           <!-- hambergur menu -->
           <div class="navbar-open-btn">
+            <span class="visually-hidden">navigation menu</span>
             <img
               class="navbar-toggle-icon open-btn"
               src="./assets/img/SVG/icon-hamburger.svg"
@@ -90,18 +95,20 @@
       <div class="wrapper">
         <main class="main">
           <!-- Hero -->
-          <section class="hero">
+          <div class="hero">
             <div class="hero-content">
-              <article class="article">
+              <section class="article">
                 <h1>Bring everyone together to build better products.</h1>
                 <p>
                   Manage makes it simple for software teams to plan day-to-day
                   tasks while keeping the larger team goals in view.
                 </p>
-              </article>
+              </section>
               <!-- Button -->
               <div class="btn">
-                <a href="#" class="btn-link">Get Started</a>
+                <a href="#" class="btn-link" aria-label="get started"
+                  >Get Started</a
+                >
               </div>
               <!-- /button -->
             </div>
@@ -112,7 +119,7 @@
                 alt="various pi chart and bars to show company grwth"
               />
             </div>
-          </section>
+          </div>
           <!-- /hero -->
           <section class="focused">
             <div class="focused-content">
@@ -167,9 +174,9 @@
       </div>
       <!-- /main-wraper -->
       <div class="wrapper-fluid">
-        <section class="carousel">
+        <section class="carousel" aria-label="carousel of message">
           <h2>What they've said</h2>
-          <ul class="carousel-items">
+          <ul class="carousel-items" tabindex="0">
             <li class="carousel-item">
               <img
                 class="profile-img"
@@ -237,11 +244,13 @@
           </ul>
           <!-- Button -->
           <div class="btn">
-            <a href="#" class="btn-link">Get Started</a>
+            <a href="#" class="btn-link" aria-label="get started"
+              >Get Started</a
+            >
           </div>
           <!-- /button -->
         </section>
-        <section class="simplify">
+        <section class="simplify" aria-label="simplify your work">
           <img
             src="./assets/img/SVG/bg-simplify-section-desktop.svg"
             alt=""
@@ -252,7 +261,9 @@
             <h2>Simplify how your team works today.</h2>
             <!-- Button -->
             <div class="btn btn-inverted">
-              <a href="#" class="btn-link">Get Started</a>
+              <a href="#" class="btn-link" aria-label="get started"
+                >Get Started</a
+              >
             </div>
             <!-- /button -->
           </div>
@@ -263,7 +274,7 @@
         <footer class="footer">
           <div class="social">
             <div class="logo">
-              <a href="#">
+              <a href="#" aria-label="manage landing page">
                 <?xml version="1.0" encoding="utf-8"?><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="146"
@@ -295,35 +306,35 @@
             </div>
             <ul class="social-icons">
               <li class="social-icon">
-                <a href="#">
+                <a href="#" aria-label="facebook">
                   <svg class="icon social-media">
                     <use href="#icon-facebook" />
                   </svg>
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="#" aria-label="youtube">
                   <svg class="icon social-media">
                     <use href="#icon-youtube" />
                   </svg>
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="#" aria-label="twitter">
                   <svg class="icon social-media">
                     <use href="#icon-twitter" />
                   </svg>
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="#" aria-label="pinterest">
                   <svg class="icon social-media">
                     <use href="#icon-pinterest" />
                   </svg>
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="#" aria-label="instagram">
                   <svg class="icon social-media">
                     <use href="#icon-instagram" />
                   </svg>
@@ -333,37 +344,45 @@
           </div>
           <!-- /social -->
           <div class="footer-nav">
-            <ul class="navbar">
-              <li class="nav-items">
-                <a href="#" class="nav-link">Home</a>
+            <ul class="navbar" role="menu">
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="home">Home</a>
               </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link">Pricing</a>
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="pricing">Pricing</a>
               </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link">Products</a>
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="products">Products</a>
               </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link">About Us</a>
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="about us">About Us</a>
               </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link">Careers</a>
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="careers">Careers</a>
               </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link">Community</a>
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="community"
+                  >Community</a
+                >
               </li>
-              <li class="nav-items">
-                <a href="#" class="nav-link">Privacy Policy</a>
+              <li class="nav-items" role="menuitem">
+                <a href="#" class="nav-link" aria-label="privacy policy"
+                  >Privacy Policy</a
+                >
               </li>
             </ul>
           </div>
           <!-- /footer-nav -->
           <div class="footer-search">
             <div class="input-group">
-              <input type="text" placeholder="Update in your inbox..." />
+              <input
+                type="text"
+                placeholder="Update in your inbox..."
+                role="searchbox"
+              />
               <!-- Button -->
               <div class="btn">
-                <a href="#" class="btn-link">Go</a>
+                <a href="#" class="btn-link" role="search">Go</a>
               </div>
               <!-- /button -->
             </div>
