@@ -110,7 +110,7 @@ main .container {
 }
 
 .overlay-img a:where(:hover, :focus) {
-  border: 2px solid black;
+  border: 2px solid var(--clr-primary);
 }
 
 .content {
