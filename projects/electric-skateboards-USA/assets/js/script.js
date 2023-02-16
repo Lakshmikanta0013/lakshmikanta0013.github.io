@@ -21,6 +21,7 @@ navMenuOpener.addEventListener('click', openMenu),
       closeMenu();
   });
 const header = document.querySelector('.header'),
+  navHeight = headerNavbar.getBoundingClientRect().height,
   stickyNav = function (e) {
     const [t] = e;
     t.isIntersecting
@@ -30,7 +31,7 @@ const header = document.querySelector('.header'),
   headerObserver = new IntersectionObserver(stickyNav, {
     root: null,
     threshold: 1,
-    rootMargin: '0px',
+    rootMargin: `-${navHeight}px`,
   });
 headerObserver.observe(header),
   headerNavbar.addEventListener('click', function (e) {
