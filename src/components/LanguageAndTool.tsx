@@ -1,3 +1,5 @@
+import codeIcon from '../assets/images/icons/code.svg';
+import toolsIcon from '../assets/images/icons/tools.svg';
 import skills from '../data/Skills';
 const { languages, tools } = skills;
 
@@ -6,7 +8,7 @@ const LanguageAndTool = () => {
     <div className="mx-auto -mt-20 flex w-full flex-col overflow-hidden rounded-3xl bg-white shadow-lg dark:bg-dark-700 md:w-[90%] md:flex-row">
       <div className="flex flex-col border-b-2 border-dashed border-dark-500 p-8 md:w-2/3 md:border-b-0 md:border-r-2">
         <div className="mx-auto mb-8 h-24 w-24 rounded-full bg-blue-300 p-4">
-          <img src="/src/assets/images/icons/code.svg" alt="" aria-hidden />
+          <img src={codeIcon} alt="" aria-hidden />
         </div>
         <h3 className="text-center text-3xl font-bold text-dark-900 dark:text-gray-50">
           Languages I can code
@@ -29,7 +31,7 @@ const LanguageAndTool = () => {
       </div>
       <div className="flex flex-col p-8 md:w-1/3">
         <div className="mx-auto mb-8 h-24 w-24 rounded-full bg-blue-300 p-4">
-          <img src="/src/assets/images/icons/tools.svg" alt="" aria-hidden />
+          <img src={toolsIcon} alt="" aria-hidden />
         </div>
         <h3 className="text-center text-3xl font-bold text-dark-900 dark:text-gray-50">
           Tools I use
