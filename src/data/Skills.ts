@@ -1,3 +1,17 @@
+import bootstrapLogo from '../assets/images/icons/bootstrap.svg';
+import cssLogo from '../assets/images/icons/css.svg';
+import figmaLogo from '../assets/images/icons/figma.svg';
+import gitLogo from '../assets/images/icons/git.svg';
+import htmlLogo from '../assets/images/icons/html.svg';
+import javascriptLogo from '../assets/images/icons/javascript.svg';
+import nextjsLogo from '../assets/images/icons/nextjs.svg';
+import photoshopLogo from '../assets/images/icons/photoshop.svg';
+import reactLogo from '../assets/images/icons/react.svg';
+import reduxLogo from '../assets/images/icons/redux.svg';
+import sassLogo from '../assets/images/icons/sass.svg';
+import tailwindcssLogo from '../assets/images/icons/tailwindcss.svg';
+import vscodeLogo from '../assets/images/icons/vscode.svg';
+
 type PropsType = {
   id: number;
   name: string;
@@ -10,55 +24,55 @@ const SKILLS = {
     {
       id: 1,
       name: 'React',
-      icon: '/src/assets/images/icons/react.svg',
+      icon: reactLogo,
       color: '#61DBFB',
     },
     {
       id: 2,
       name: 'Redux',
-      icon: '/src/assets/images/icons/redux.svg',
+      icon: reduxLogo,
       color: '#61DBFB',
     },
     {
       id: 3,
       name: 'Next JS',
-      icon: '/src/assets/images/icons/nextjs.svg',
+      icon: nextjsLogo,
       color: '#61DBFB',
     },
     {
       id: 4,
       name: 'Javascript',
-      icon: '/src/assets/images/icons/javascript.svg',
+      icon: javascriptLogo,
       color: '#61DBFB',
     },
     {
       id: 5,
       name: 'HTML',
-      icon: '/src/assets/images/icons/html.svg',
+      icon: htmlLogo,
       color: '#61DBFB',
     },
     {
       id: 6,
       name: 'CSS',
-      icon: '/src/assets/images/icons/css.svg',
+      icon: cssLogo,
       color: '#61DBFB',
     },
     {
       id: 7,
       name: 'SASS',
-      icon: '/src/assets/images/icons/sass.svg',
+      icon: sassLogo,
       color: '#61DBFB',
     },
     {
       id: 8,
       name: 'Bootstrap',
-      icon: '/src/assets/images/icons/bootstrap.svg',
+      icon: bootstrapLogo,
       color: '#61DBFB',
     },
     {
       id: 9,
       name: 'TailwindCSS',
-      icon: '/src/assets/images/icons/tailwindcss.svg',
+      icon: tailwindcssLogo,
       color: '#61DBFB',
     },
   ],
@@ -67,22 +81,22 @@ const SKILLS = {
     {
       id: 1,
       name: 'VSCode',
-      icon: '/src/assets/images/icons/vscode.svg',
+      icon: vscodeLogo,
     },
     {
       id: 2,
       name: 'Git',
-      icon: '/src/assets/images/icons/git.svg',
+      icon: gitLogo,
     },
     {
       id: 3,
       name: 'Figma',
-      icon: '/src/assets/images/icons/figma.svg',
+      icon: figmaLogo,
     },
     {
       id: 4,
       name: 'PhotoShop',
-      icon: '/src/assets/images/icons/photoshop.svg',
+      icon: photoshopLogo,
     },
   ],
 };
