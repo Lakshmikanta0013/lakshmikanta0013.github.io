@@ -30,15 +30,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
             alt={project.title}
             className="h-full max-w-full object-cover"
           />
-          {openModal && (
-            <ImageModal
-              onClick={handelClose}
-              imgAlt={project.title}
-              imgURL={project.image}
-              liveURL={project.url}
-              repoURL={project.repo}
-            />
-          )}
+          {openModal && <ImageModal onClick={handelClose} project={project} />}
         </a>
       </>
 
