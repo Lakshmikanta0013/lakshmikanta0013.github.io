@@ -58,3 +58,24 @@
     grid-column: 5/-1;
   }
 }
+
+.input__group {
+  @apply relative mb-4 grid;
+}
+
+.input__group input,
+.input__group textarea {
+  font: inherit;
+  @apply rounded-lg border-none px-4 py-2 outline-none;
+}
+
+.input__group label {
+  @apply absolute left-4 top-2 capitalize text-gray-400 transition-all duration-300 ease-linear;
+}
+
+.input__group label.active {
+  top: -1.5rem;
+  font-size: 0.875rem;
+  left: 0.5rem;
+  @apply font-medium text-white;
+}

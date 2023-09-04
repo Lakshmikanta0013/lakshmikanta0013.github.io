@@ -1,3 +1,4 @@
+import Contact from '../components/Contact';
 import Container from '../components/Container';
 import HeroSection from '../components/HeroSection';
 import LanguageAndTool from '../components/LanguageAndTool';
@@ -24,12 +25,20 @@ const Home = () => {
           <LanguageAndTool />
         </Container>
       </section>
-      <section className="pb-16 pt-24">
+      <section className="pb-16 pt-24" id="projects">
         <Container>
           <h2 className="mb-16 text-center font-serif text-3xl font-bold capitalize text-dark-900 drop-shadow-md dark:text-gray-50 lg:text-5xl">
             My recent projects
           </h2>
           <RecentWork />
+        </Container>
+      </section>
+      <section id="contact" className="bg-lime-400 pb-16 pt-24">
+        <Container>
+          <h2 className="mb-8 text-center font-serif text-3xl font-bold text-white drop-shadow-md lg:text-5xl">
+            Get in touch with me
+          </h2>
+          <Contact />
         </Container>
       </section>
     </main>
