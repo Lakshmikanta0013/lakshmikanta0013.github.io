@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
 
 import Button from './Button';
@@ -36,6 +37,17 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
     element.click();
   };
 
+  const handelNavigation = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const path = (e.target as HTMLAnchorElement).getAttribute('href');
+    if (!path) return;
+    document.querySelector(path)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start',
+    });
+  };
+
   return (
     <>
       {/* Desktop Navbar */}
@@ -44,9 +56,13 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
         <ul className="flex gap-4">
           {menuItems.map(item => (
             <li key={item.id}>
-              <Link to={item.path} className="font-medium text-white">
+              <a
+                href={item.path}
+                className="font-medium text-white"
+                onClick={handelNavigation}
+              >
                 {item.itemName}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
