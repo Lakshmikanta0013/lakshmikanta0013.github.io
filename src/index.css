@@ -70,10 +70,11 @@
 }
 
 .input__group label {
-  @apply absolute left-4 top-2 capitalize text-gray-400 transition-all duration-300 ease-linear;
+  @apply pointer-events-none absolute left-4 top-2 capitalize text-gray-400 transition-all duration-300 ease-linear;
 }
 
-.input__group label.active {
+.input__group label.active,
+.input__group input:focus + label {
   top: -1.5rem;
   font-size: 0.875rem;
   left: 0.5rem;
