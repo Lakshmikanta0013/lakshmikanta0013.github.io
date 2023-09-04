@@ -13,8 +13,8 @@ type MenuItem = {
 const menuItems: MenuItem[] = [
   {
     id: 1,
-    itemName: 'About Me',
-    path: '#about',
+    itemName: 'Skills',
+    path: '#skills',
   },
   {
     id: 2,
