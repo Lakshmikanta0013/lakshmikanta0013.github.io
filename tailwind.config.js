@@ -21,13 +21,25 @@ export default {
         },
       },
       animation: {
-        'wiggly-motion': 'wiggle 3s linear infinite alternate',
+        slideUp: 'slideUp 0.5s ease-in-out forwards',
+        slideLeft: 'slideLeft 0.5s ease-in-out forwards',
+        fadeIn: 'fadeIn 0.5s ease-in-out forwards',
       },
       keyframes: {
-        wiggle: {
-          '0%': { transform: 'translate(10px, 10px)' },
-          '50%': { transform: 'translate(0)' },
-          '100%': { transform: 'translate(-10px, -10px)' },
+        slideUp: {
+          '0%': { transform: 'translateY(100px) scale(0.8)' },
+          '100%': { transform: 'translateY(0) scale(1)' },
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(100px) scale(1.2, 1)' },
+          '50%': { transform: 'translateX(0) scale(1.3, 1)' },
+          '70%': { transform: 'translateX(0) scale(1.1, 1)' },
+          '90%': { transform: 'translateX(0) scale(0.9, 1)' },
+          '100%': { transform: 'translateX(0) scale(1)' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
       },
     },

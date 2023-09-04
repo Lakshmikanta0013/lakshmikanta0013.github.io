@@ -1,3 +1,4 @@
+import BackToTop from '../components/BackToTop';
 import Contact from '../components/Contact';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
@@ -8,6 +9,7 @@ import RecentWork from '../components/RecentWork';
 const Home = () => {
   return (
     <>
+      <BackToTop />
       <main className="bg-gray-50 dark:bg-dark-900">
         <section
           id="hero"
