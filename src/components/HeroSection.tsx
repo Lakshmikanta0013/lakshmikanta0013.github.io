@@ -6,7 +6,7 @@ import { SocialLink, socialLinks } from '../data/Social';
 
 const HeroSection = () => {
   return (
-    <div className="flex min-h-[80vh] w-full flex-col-reverse items-center md:min-h-[90vh] md:flex-row md:px-6">
+    <div className="flex max-h-[1024px] min-h-screen w-full flex-col-reverse items-center md:min-h-[90vh] md:flex-row md:px-6">
       <div className="flex grow flex-col justify-center px-3 pb-6 md:w-1/2 md:px-6">
         <h1 className="mb-3 font-serif text-4xl font-black leading-[0.8] text-blue-600 dark:text-blue-400 md:text-6xl lg:text-7xl">
           <span className="block font-sans text-xl font-normal text-dark-900 dark:text-blue-100 md:text-3xl">
