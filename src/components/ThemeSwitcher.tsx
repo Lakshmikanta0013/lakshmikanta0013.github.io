@@ -5,7 +5,7 @@ import { toggleTheme } from '../store/reducer/ThemeReducer';
 import { RootState } from '../store/store';
 import ToggleButton from './ToggleButton';
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = ({ className }: { className?: string }) => {
   const theme = useSelector((state: RootState) => state.theme);
   const dispatch = useDispatch();
 
@@ -19,7 +19,11 @@ const ThemeSwitcher = () => {
     document.documentElement.classList.add(theme);
     localStorage.setItem('theme', theme);
   }, [theme]);
-  return <ToggleButton isDarkMode={theme === 'dark'} onClick={handleChange} />;
+  return (
+    <div className={className}>
+      <ToggleButton isDarkMode={theme === 'dark'} onClick={handleChange} />
+    </div>
+  );
 };
 
 export default ThemeSwitcher;

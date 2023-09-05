@@ -51,7 +51,7 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
     <>
       {/* Desktop Navbar */}
       <nav className="hidden items-center gap-4 md:flex">
-        <ThemeSwitcher />
+        <ThemeSwitcher className="mr-8" />
         <ul className="flex gap-2">
           {menuItems.map(item => (
             <li key={item.id}>
