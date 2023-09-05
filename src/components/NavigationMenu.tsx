@@ -1,5 +1,4 @@
 import { MouseEvent } from 'react';
-import { Link } from 'react-router-dom';
 import { twJoin } from 'tailwind-merge';
 
 import Button from './Button';
@@ -53,12 +52,12 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
       {/* Desktop Navbar */}
       <nav className="hidden items-center gap-4 md:flex">
         <ThemeSwitcher />
-        <ul className="flex gap-4">
+        <ul className="flex gap-2">
           {menuItems.map(item => (
             <li key={item.id}>
               <a
                 href={item.path}
-                className="font-medium text-white"
+                className="rounded-md px-4 py-2 font-medium text-white transition-colors duration-200 ease-linear hover:bg-gray-700"
                 onClick={handelNavigation}
               >
                 {item.itemName}
@@ -81,14 +80,15 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
             >
               <>
                 {menuItems.map(item => (
-                  <Link to={item.path}>
-                    <li
-                      key={item.id}
-                      className="transition-color relative rounded bg-gray-800 py-2 text-center font-medium text-white duration-1000 ease-linear hover:bg-gray-700"
+                  <li key={item.id} className="flex">
+                    <a
+                      href={item.path}
+                      onClick={handelNavigation}
+                      className="transition-color relative w-full rounded bg-gray-500 py-2 text-center font-medium text-white duration-1000 ease-linear hover:bg-gray-700"
                     >
                       {item.itemName}
-                    </li>
-                  </Link>
+                    </a>
+                  </li>
                 ))}
               </>
             </ul>
