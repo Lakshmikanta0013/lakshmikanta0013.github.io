@@ -2,7 +2,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
-import { twJoin } from 'tailwind-merge';
 
 import { ProjectType } from '../data/Projects';
 import ImageModal from './ImageModal';
@@ -48,19 +47,19 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
               .map((el, i) => (
                 <span
                   key={i}
-                  className={twJoin(
-                    'inline-block rounded',
-                    el == 'react' && 'bg-[hsl(224,96%,80%)]/80',
-                    el == 'nextjs' && 'bg-[hsl(220,6%,18%)]/80 text-white',
-                    el == 'typescript' && 'bg-[hsl(186,96%,80%)]/80',
-                    el == 'redux' && 'bg-[hsl(263,96%,80%)]/80',
-                    el == 'MUI' && 'bg-[hsl(203,96%,80%)]/80',
-                    el == 'prisma' && 'bg-[hsl(225,22%,30%)]/80 text-white',
-                    el == 'postgreSQL' && 'bg-[hsl(350,96%,80%)]/80',
-                    'px-3 py-1 text-[12px] capitalize',
-                  )}
+                  style={{
+                    display: 'inline-block',
+                    borderRadius: '4px',
+                    backgroundColor: `hsl(${Math.floor(
+                      Math.random() * 360,
+                    )},96%,80%)`,
+                    paddingInline: '10px',
+                    paddingBlock: '4px',
+                    fontSize: '12px',
+                    fontWeight: '500',
+                  }}
                 >
-                  {el}
+                  #{el}
                 </span>
               ))}
           </div>

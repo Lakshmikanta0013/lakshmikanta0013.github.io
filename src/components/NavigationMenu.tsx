@@ -1,6 +1,6 @@
-import clsx from 'clsx';
 import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
+import { twJoin } from 'tailwind-merge';
 
 import Button from './Button';
 import ThemeSwitcher from './ThemeSwitcher';
@@ -73,7 +73,7 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
         {openState && (
           <>
             <ul
-              className={clsx(
+              className={twJoin(
                 `mt-1 flex flex-col gap-1 py-6 transition-all duration-500`,
                 !openState && 'h-0 w-0 scale-y-0',
                 openState && 'h-full w-full origin-top scale-y-100',

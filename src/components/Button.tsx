@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { ReactNode } from 'react';
+import { twJoin } from 'tailwind-merge';
 
 type ButtonType = {
   type?: 'button' | 'submit' | 'reset' | undefined;
@@ -23,7 +23,7 @@ const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={clsx(
+      className={twJoin(
         `rounded-lg px-5 py-2 font-medium text-white transition`,
         fullWidth && 'w-full',
         buttonType === 'secondary' && 'bg-slate-500 hover:bg-slate-400',

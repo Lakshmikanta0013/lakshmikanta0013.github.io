@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import { ReactNode } from 'react';
+import { twJoin } from 'tailwind-merge';
 
 const Container = ({
   children,
@@ -10,7 +10,7 @@ const Container = ({
 }) => {
   return (
     <div
-      className={clsx(
+      className={twJoin(
         `max-w-[90rem]`,
         fullWidth && 'w-full',
         !fullWidth && 'w-[96%]',
