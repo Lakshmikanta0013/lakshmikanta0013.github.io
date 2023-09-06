@@ -24,14 +24,15 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
       className={twJoin(
-        `rounded-lg px-5 py-2 font-medium text-white transition`,
+        `transition-color flex items-center justify-center gap-4 rounded-lg px-5 py-2 font-medium duration-300 disabled:bg-dark-500 disabled:text-white-full`,
         fullWidth && 'w-full',
-        buttonType === 'secondary' && 'bg-slate-500 hover:bg-slate-400',
+        buttonType === 'secondary' &&
+          'bg-secondary text-white hover:bg-secondary-500',
         buttonType === 'inverted' &&
-          'border border-gray-500 hover:border-gray-700 hover:bg-gray-500',
+          'border-2 border-primary text-dark hover:bg-primary hover:text-white',
         buttonType !== 'secondary' &&
           buttonType !== 'inverted' &&
-          'bg-blue-500 hover:bg-blue-400',
+          'bg-primary text-white hover:bg-primary-600 dark:bg-primary-500 dark:text-dark-800 dark:hover:bg-primary-400 ',
       )}
     >
       {children}

@@ -12,7 +12,25 @@ export default {
         base: '0.75rem',
       },
       colors: {
+        primary: {
+          DEFAULT: 'hsl(180, 80%, 36%)',
+          700: 'hsl(180, 80%, 36%)',
+          600: 'hsl(180, 100%, 40%)',
+          500: 'hsl(180, 90%, 58%)',
+          400: 'hsl(180, 100%, 76%)',
+        },
+        secondary: {
+          DEFAULT: 'hsl(259, 100%, 59%)',
+          600: 'hsl(259, 100%, 59%)',
+          500: 'hsl(259, 100%, 69%)',
+          400: 'hsl(259, 100%, 79%)',
+        },
+        white: {
+          DEFAULT: 'hsl(240, 21%, 95%)',
+          full: 'hsl(255, 100%,100%)',
+        },
         dark: {
+          DEFAULT: 'hsl(240, 10%, 14%)',
           900: 'hsl(240, 10%, 14%)',
           800: 'hsl(240, 10%, 20%)',
           700: 'hsl(240, 10%, 30%)',
@@ -38,8 +56,8 @@ export default {
           '100%': { transform: 'translateX(0) scale(1)' },
         },
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          '0%': { opacity: 0, transform: 'scale(0.5)' },
+          '100%': { opacity: 1, transform: 'scale(1)' },
         },
       },
     },

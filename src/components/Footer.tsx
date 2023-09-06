@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
       <div className="flex flex-col items-center gap-10">
-        <Logo large />
+        <Logo large variant="dark" />
 
         <p className="max-w-sm text-center font-serif text-xl text-gray-300">
           Transforming Ideas into Immersive User Experiences with the Power of

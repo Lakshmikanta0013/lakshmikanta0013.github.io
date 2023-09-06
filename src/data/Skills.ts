@@ -47,13 +47,13 @@ const SKILLS = {
     },
     {
       id: 5,
-      name: 'HTML',
+      name: 'HTML5',
       icon: htmlLogo,
       color: '#61DBFB',
     },
     {
       id: 6,
-      name: 'CSS',
+      name: 'CSS3',
       icon: cssLogo,
       color: '#61DBFB',
     },
