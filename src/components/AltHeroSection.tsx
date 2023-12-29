@@ -4,13 +4,13 @@ import heroImage from '../assets/images/hero-alt.webp';
 const AltHeroSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="mb-24 mt-32 flex flex-col px-3 pb-6 sm:mb-32 sm:mt-40">
-        <h1 className="mb-6  text-center text-4xl font-black dark:text-primary-400 md:text-6xl">
-          Frontend React Developer
+      <div className="my-16 flex flex-col items-center px-3 pb-6 sm:mb-20 sm:mt-20">
+        <h1 className="mb-16  text-center text-4xl font-black dark:text-primary-400 md:w-3/4 md:text-7xl lg:text-9xl">
+          FullStack Web Developer
         </h1>
         <p className="text-center text-xl text-dark-900 dark:text-white">
           Transforming Ideas into Immersive User Experiences with the Power of
-          React
+          React and PHP
         </p>
       </div>
       <div>
