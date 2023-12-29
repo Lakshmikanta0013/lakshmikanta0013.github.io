@@ -4,8 +4,10 @@ import figmaLogo from '../assets/images/icons/figma.svg';
 import gitLogo from '../assets/images/icons/git.svg';
 import htmlLogo from '../assets/images/icons/html.svg';
 import javascriptLogo from '../assets/images/icons/javascript.svg';
+import mysqlLogo from '../assets/images/icons/mysql.svg';
 import nextjsLogo from '../assets/images/icons/nextjs.svg';
 import photoshopLogo from '../assets/images/icons/photoshop.svg';
+import phpLogo from '../assets/images/icons/php.svg';
 import reactLogo from '../assets/images/icons/react.svg';
 import reduxLogo from '../assets/images/icons/redux.svg';
 import sassLogo from '../assets/images/icons/sass.svg';
@@ -23,6 +25,12 @@ const SKILLS = {
   languages: <PropsType[]>[
     {
       id: 1,
+      name: 'PHP',
+      icon: phpLogo,
+      color: '#61DBFB',
+    },
+    {
+      id: 1,
       name: 'React',
       icon: reactLogo,
       color: '#61DBFB',
@@ -37,6 +45,12 @@ const SKILLS = {
       id: 3,
       name: 'Next JS',
       icon: nextjsLogo,
+      color: '#61DBFB',
+    },
+    {
+      id: 3,
+      name: 'MySQL',
+      icon: mysqlLogo,
       color: '#61DBFB',
     },
     {
