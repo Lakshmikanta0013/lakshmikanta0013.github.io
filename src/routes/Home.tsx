@@ -19,8 +19,8 @@ const Home = () => {
             <AltHeroSection />
           </Container>
         </section>
-        <section id="about" className=" pb-16">
-          <div className=" bg-primary-700 pb-40 pt-24">
+        <section id="about" className=" pb-5">
+          <div className=" bg-primary-700 pb-32 pt-24">
             <div className="px-2 pb-16">
               <Intro />
             </div>
