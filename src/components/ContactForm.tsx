@@ -51,29 +51,23 @@ const ContactForm = () => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
-  const handelSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handelSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (errors.length > 0) return;
     dispatch(setFormData(inputs));
     dispatch(setFormStatus('loading'));
     if (formEl.current == null) throw new Error();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formEl.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-      )
-      .then(
-        () => {
-          setInputs(initialState);
-          dispatch(setFormStatus('completed'));
-        },
-        () => {
-          dispatch(setFormStatus('rejected'));
-        },
-      );
+    const res = await emailjs.sendForm(
+      'service_qdjdol9',
+      'template_lobv7nq',
+      formEl.current,
+      'G0MWsjYi9pbxnAwfJ',
+    );
+    if (res.status === 200) {
+      return dispatch(setFormStatus('completed'));
+    }
+    return dispatch(setFormStatus('rejected'));
   };
 
   return (
