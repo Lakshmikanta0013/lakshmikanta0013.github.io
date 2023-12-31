@@ -34,7 +34,7 @@ const Home = () => {
         </section>
         <section className="pb-16 pt-24" id="projects">
           <Container>
-            <h2 className="mb-16 text-center text-4xl font-bold capitalize text-dark-900 drop-shadow-md dark:text-gray-50 lg:text-6xl">
+            <h2 className="mb-16 text-center text-4xl font-bold capitalize text-dark-900 drop-shadow-md lg:text-6xl dark:text-gray-50">
               My recent projects
             </h2>
             <RecentWork />

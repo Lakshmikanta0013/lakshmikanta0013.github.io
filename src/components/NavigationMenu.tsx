@@ -62,7 +62,7 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
       {/* Mobile Navbar */}
       <nav
         className={twJoin(
-          'mt-3 grid w-full overflow-hidden rounded-md bg-white-full px-3 transition-[grid-template-rows]  duration-300 ease-linear dark:bg-dark-700 md:hidden',
+          'mt-3 grid w-full overflow-hidden rounded-md bg-white-full px-3 transition-[grid-template-rows]  duration-300 ease-linear md:hidden dark:bg-dark-700',
           !openState ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]',
         )}
       >

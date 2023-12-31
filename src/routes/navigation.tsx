@@ -20,7 +20,7 @@ const Navigation = () => {
               <button
                 data-collapse-toggle="navbar-default"
                 type="button"
-                className="inline-flex items-center justify-center rounded border border-gray-700 p-1 text-sm text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-600 dark:border-gray-200 dark:text-gray-200 dark:hover:text-gray-400 md:hidden"
+                className="inline-flex items-center justify-center rounded border border-gray-700 p-1 text-sm text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden dark:border-gray-200 dark:text-gray-200 dark:hover:text-gray-400"
                 aria-controls="navbar-default"
                 aria-expanded="false"
                 onClick={() => setOpen(!open)}

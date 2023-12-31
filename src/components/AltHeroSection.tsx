@@ -5,7 +5,7 @@ const AltHeroSection = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="my-16 flex flex-col items-center px-3 pb-6 sm:mb-20 sm:mt-20">
-        <h1 className="mb-16  text-center text-4xl font-black dark:text-primary-400 md:w-3/4 md:text-7xl lg:text-9xl">
+        <h1 className="mb-16  text-center text-4xl font-black md:w-3/4 md:text-7xl lg:text-9xl dark:text-primary-400">
           FullStack Web Developer
         </h1>
         <p className="text-center text-xl text-dark-900 dark:text-white">
