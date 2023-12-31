@@ -1,6 +1,6 @@
-import CodeIcon from '../assets/images/icons/code.svg?react';
-import ToolsIcon from '../assets/images/icons/tools.svg?react';
-import { languages, tools } from '../data/Skills';
+import CodeIcon from '#assets/images/icons/code.svg?react';
+import ToolsIcon from '#assets/images/icons/tools.svg?react';
+import { languages, tools } from '#data/Skills';
 
 const LanguageAndTool = () => {
   return (

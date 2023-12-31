@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { twJoin } from 'tailwind-merge';
 import validator from 'validator';
 
-import { setFormData, setFormStatus } from '../store/reducer/FormSlice';
-import { AppDispatch, RootState } from '../store/store';
+import { setFormData, setFormStatus } from '#store/reducer/FormSlice';
+import { AppDispatch, RootState } from '#store/store';
 import Button from './Button';
 import Spinner from './Spinner';
 

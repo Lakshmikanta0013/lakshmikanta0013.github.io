@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { toggleTheme } from '../store/reducer/ThemeReducer';
-import { RootState } from '../store/store';
+import { toggleTheme } from '#store/reducer/ThemeReducer';
+import { RootState } from '#store/store';
 import ToggleButton from './ToggleButton';
 
 const ThemeSwitcher = ({ className }: { className?: string }) => {

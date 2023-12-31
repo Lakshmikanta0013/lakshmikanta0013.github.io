@@ -1,7 +1,8 @@
 import { useSelector } from 'react-redux';
 
-import connectImg from '../assets/images/connect1.svg';
-import { RootState } from '../store/store';
+import connectImg from '#assets/images/connect1.svg';
+import { RootState } from '#store/store';
+
 import ContactForm from './ContactForm';
 import MessageSent from './MessageSent';
 

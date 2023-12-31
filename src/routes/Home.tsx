@@ -1,13 +1,13 @@
-import AltHeroSection from '../components/AltHeroSection';
-import BackToTop from '../components/BackToTop';
-import Contact from '../components/Contact';
-import ContactCapsule from '../components/ContactCapsule';
-import Container from '../components/Container';
-import Footer from '../components/Footer';
-import Intro from '../components/Intro';
-// import HeroSection from '../components/HeroSection';
-import LanguageAndTool from '../components/LanguageAndTool';
-import RecentWork from '../components/RecentWork';
+import AltHeroSection from '#components/AltHeroSection';
+import BackToTop from '#components/BackToTop';
+import Contact from '#components/Contact';
+import ContactCapsule from '#components/ContactCapsule';
+import Container from '#components/Container';
+import Footer from '#components/Footer';
+import Intro from '#components/Intro';
+// import HeroSection from '#components/HeroSection';
+import LanguageAndTool from '#components/LanguageAndTool';
+import RecentWork from '#components/RecentWork';
 
 const Home = () => {
   return (

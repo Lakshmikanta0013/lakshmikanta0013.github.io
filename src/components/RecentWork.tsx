@@ -1,4 +1,4 @@
-import Projects from '../data/Projects';
+import Projects from '#data/Projects';
 import ProjectCard from './ProjectCard';
 
 const featuredProject = Projects.filter(project => project.featured);

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { twJoin } from 'tailwind-merge';
 
-import { SocialLink, socialLinks } from '../data/Social';
+import { SocialLink, socialLinks } from '#data/Social';
 
 const SocialLinks = ({ inverted }: { inverted?: boolean }) => {
   return (

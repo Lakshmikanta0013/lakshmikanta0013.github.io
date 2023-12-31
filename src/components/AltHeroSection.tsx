@@ -1,5 +1,5 @@
-import heroImage from '../assets/images/hero-alt.webp';
-// import HeroIllustration from '../assets/images/hero-illustration.webp';
+import heroImage from '#assets/images/hero-alt.webp';
+// import HeroIllustration from '#assets/images/hero-illustration.webp';
 
 const AltHeroSection = () => {
   return (

@@ -2,7 +2,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faClose, faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { ProjectType } from '../data/Projects';
+import { ProjectType } from '#data/Projects';
 
 const ImageModal = ({
   onClick,

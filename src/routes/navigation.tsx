@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import Container from '../components/Container';
-import Logo from '../components/Logo';
-import NavigationMenu from '../components/NavigationMenu';
+import Container from '#components/Container';
+import Logo from '#components/Logo';
+import NavigationMenu from '#components/NavigationMenu';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
