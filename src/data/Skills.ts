@@ -1,118 +1,114 @@
-import bootstrapLogo from '../assets/images/icons/bootstrap.svg';
-import cssLogo from '../assets/images/icons/css.svg';
-import figmaLogo from '../assets/images/icons/figma.svg';
-import gitLogo from '../assets/images/icons/git.svg';
-import htmlLogo from '../assets/images/icons/html.svg';
-import javascriptLogo from '../assets/images/icons/javascript.svg';
-import mysqlLogo from '../assets/images/icons/mysql.svg';
-import nextjsLogo from '../assets/images/icons/nextjs.svg';
-import photoshopLogo from '../assets/images/icons/photoshop.svg';
-import phpLogo from '../assets/images/icons/php.svg';
-import reactLogo from '../assets/images/icons/react.svg';
-import reduxLogo from '../assets/images/icons/redux.svg';
-import sassLogo from '../assets/images/icons/sass.svg';
-import tailwindcssLogo from '../assets/images/icons/tailwindcss.svg';
-import vscodeLogo from '../assets/images/icons/vscode.svg';
+import BootstrapLogo from '../assets/images/icons/bootstrap.svg?react';
+import CssLogo from '../assets/images/icons/css.svg?react';
+import FigmaLogo from '../assets/images/icons/figma.svg?react';
+import GitLogo from '../assets/images/icons/git.svg?react';
+import HtmlLogo from '../assets/images/icons/html.svg?react';
+import JavascriptLogo from '../assets/images/icons/javascript.svg?react';
+import MysqlLogo from '../assets/images/icons/mysql.svg?react';
+import NextjsLogo from '../assets/images/icons/nextjs.svg?react';
+import PhotoshopLogo from '../assets/images/icons/photoshop.svg?react';
+import PhpLogo from '../assets/images/icons/php.svg?react';
+import ReactLogo from '../assets/images/icons/react.svg?react';
+import ReduxLogo from '../assets/images/icons/redux.svg?react';
+import SassLogo from '../assets/images/icons/sass.svg?react';
+import TailwindCssLogo from '../assets/images/icons/tailwindcss.svg?react';
+import VscodeLogo from '../assets/images/icons/vscode.svg?react';
 
 type PropsType = {
   id: number;
   name: string;
-  icon: string;
+  Icon: React.FunctionComponent<React.SVGProps<SVGAElement>>;
   color: string;
 };
 
-const SKILLS = {
-  languages: <PropsType[]>[
-    {
-      id: 1,
-      name: 'PHP',
-      icon: phpLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 1,
-      name: 'React',
-      icon: reactLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 2,
-      name: 'Redux',
-      icon: reduxLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 3,
-      name: 'Next JS',
-      icon: nextjsLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 3,
-      name: 'MySQL',
-      icon: mysqlLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 4,
-      name: 'Javascript',
-      icon: javascriptLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 5,
-      name: 'HTML5',
-      icon: htmlLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 6,
-      name: 'CSS3',
-      icon: cssLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 7,
-      name: 'SASS',
-      icon: sassLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 8,
-      name: 'Bootstrap',
-      icon: bootstrapLogo,
-      color: '#61DBFB',
-    },
-    {
-      id: 9,
-      name: 'TailwindCSS',
-      icon: tailwindcssLogo,
-      color: '#61DBFB',
-    },
-  ],
+export const languages = <PropsType[]>[
+  {
+    id: 1,
+    name: 'PHP',
+    Icon: PhpLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 2,
+    name: 'React',
+    Icon: ReactLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 3,
+    name: 'Redux',
+    Icon: ReduxLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 4,
+    name: 'Next JS',
+    Icon: NextjsLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 5,
+    name: 'MySQL',
+    Icon: MysqlLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 6,
+    name: 'Javascript',
+    Icon: JavascriptLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 7,
+    name: 'HTML5',
+    Icon: HtmlLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 8,
+    name: 'CSS3',
+    Icon: CssLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 9,
+    name: 'SASS',
+    Icon: SassLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 10,
+    name: 'Bootstrap',
+    Icon: BootstrapLogo,
+    color: '#61DBFB',
+  },
+  {
+    id: 11,
+    name: 'TailwindCSS',
+    Icon: TailwindCssLogo,
+    color: '#61DBFB',
+  },
+];
 
-  tools: <PropsType[]>[
-    {
-      id: 1,
-      name: 'VSCode',
-      icon: vscodeLogo,
-    },
-    {
-      id: 2,
-      name: 'Git',
-      icon: gitLogo,
-    },
-    {
-      id: 3,
-      name: 'Figma',
-      icon: figmaLogo,
-    },
-    {
-      id: 4,
-      name: 'PhotoShop',
-      icon: photoshopLogo,
-    },
-  ],
-};
-
-export default SKILLS;
+export const tools = <PropsType[]>[
+  {
+    id: 1,
+    name: 'VSCode',
+    Icon: VscodeLogo,
+  },
+  {
+    id: 2,
+    name: 'Git',
+    Icon: GitLogo,
+  },
+  {
+    id: 3,
+    name: 'Figma',
+    Icon: FigmaLogo,
+  },
+  {
+    id: 4,
+    name: 'PhotoShop',
+    Icon: PhotoshopLogo,
+  },
+];
