@@ -3,11 +3,12 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { twJoin } from 'tailwind-merge';
 import validator from 'validator';
 
+import { cn } from '#/lib/cn';
 import { setFormData, setFormStatus } from '#store/reducer/FormSlice';
 import { AppDispatch, RootState } from '#store/store';
+
 import Button from './Button';
 import Spinner from './Spinner';
 
@@ -92,7 +93,7 @@ const ContactForm = () => {
         />
         <label
           htmlFor="name"
-          className={twJoin(inputs.name.length > 0 && 'active')}
+          className={cn(inputs.name.length > 0 && 'active')}
         >
           Enter your Name
         </label>
@@ -108,7 +109,7 @@ const ContactForm = () => {
         />
         <label
           htmlFor="email"
-          className={twJoin(inputs.email.length > 0 && 'active')}
+          className={cn(inputs.email.length > 0 && 'active')}
         >
           Enter Your Email
         </label>
@@ -132,7 +133,7 @@ const ContactForm = () => {
         />
         <label
           htmlFor="message"
-          className={twJoin(inputs.message.length > 0 && 'active')}
+          className={cn(inputs.message.length > 0 && 'active')}
         >
           Message
         </label>

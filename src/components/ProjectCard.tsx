@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
 import { ProjectType } from '#data/Projects';
+
 import ImageModal from './ImageModal';
 
 const ProjectCard = ({ project }: { project: ProjectType }) => {

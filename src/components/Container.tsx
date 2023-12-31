@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { twJoin } from 'tailwind-merge';
+
+import { cn } from '#/lib/cn';
 
 const Container = ({
   children,
@@ -10,7 +11,7 @@ const Container = ({
 }) => {
   return (
     <div
-      className={twJoin(
+      className={cn(
         `max-w-[90rem]`,
         fullWidth && 'w-full',
         !fullWidth && 'w-[96%]',

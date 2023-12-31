@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { twJoin } from 'tailwind-merge';
+
+import { cn } from '#/lib/cn';
 
 type ButtonType = {
   type?: 'button' | 'submit' | 'reset' | undefined;
@@ -23,7 +24,7 @@ const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={twJoin(
+      className={cn(
         `transition-color flex items-center justify-center gap-4 rounded-lg px-5 py-2 font-medium duration-300 disabled:bg-dark-500 disabled:text-white-full`,
         fullWidth && 'w-full',
         buttonType === 'secondary' &&
