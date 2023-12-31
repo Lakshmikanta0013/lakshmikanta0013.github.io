@@ -1,13 +1,13 @@
-import AltHeroSection from '../components/AltHeroSection';
-import BackToTop from '../components/BackToTop';
-import Contact from '../components/Contact';
-import ContactCapsule from '../components/ContactCapsule';
-import Container from '../components/Container';
-import Footer from '../components/Footer';
-import Intro from '../components/Intro';
-// import HeroSection from '../components/HeroSection';
-import LanguageAndTool from '../components/LanguageAndTool';
-import RecentWork from '../components/RecentWork';
+import AltHeroSection from '#components/AltHeroSection';
+import BackToTop from '#components/BackToTop';
+import Contact from '#components/Contact';
+import ContactCapsule from '#components/ContactCapsule';
+import Container from '#components/Container';
+import Footer from '#components/Footer';
+import Intro from '#components/Intro';
+// import HeroSection from '#components/HeroSection';
+import LanguageAndTool from '#components/LanguageAndTool';
+import RecentWork from '#components/RecentWork';
 
 const Home = () => {
   return (
@@ -34,7 +34,7 @@ const Home = () => {
         </section>
         <section className="pb-16 pt-24" id="projects">
           <Container>
-            <h2 className="mb-16 text-center text-4xl font-bold capitalize text-dark-900 drop-shadow-md dark:text-gray-50 lg:text-6xl">
+            <h2 className="mb-16 text-center text-4xl font-bold capitalize text-dark-900 drop-shadow-md lg:text-6xl dark:text-gray-50">
               My recent projects
             </h2>
             <RecentWork />

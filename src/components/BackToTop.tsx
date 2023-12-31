@@ -24,12 +24,12 @@ const BackToTop = () => {
 
   return (
     <div
-      className="animate-slideLeft fixed bottom-6 right-0 z-50 w-14 rounded-l-full bg-red-500 shadow-lg"
+      className="fixed bottom-6 right-0 z-50 w-14 animate-slideLeft rounded-l-full bg-red-500 shadow-lg"
       hidden={!visible}
     >
       <button
         onClick={handleClick}
-        className="animate-fadeIn grid h-10 w-10 place-content-center rounded-full p-2 text-2xl text-white"
+        className="grid h-10 w-10 animate-fadeIn place-content-center rounded-full p-2 text-2xl text-white"
       >
         <FontAwesomeIcon icon={faArrowCircleUp} />
       </button>

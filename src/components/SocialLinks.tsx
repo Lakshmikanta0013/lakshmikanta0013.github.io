@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { twJoin } from 'tailwind-merge';
 
-import { SocialLink, socialLinks } from '../data/Social';
+import { cn } from '#/lib/cn';
+import { SocialLink, socialLinks } from '#data/Social';
 
 const SocialLinks = ({ inverted }: { inverted?: boolean }) => {
   return (
@@ -10,7 +10,7 @@ const SocialLinks = ({ inverted }: { inverted?: boolean }) => {
         <a href={link.url} key={link.id} target="_blank">
           <FontAwesomeIcon
             icon={link.icon}
-            className={twJoin(
+            className={cn(
               'h-8 w-8',
               inverted ? 'text-white-full' : 'text-dark',
               'shadow-sm transition-transform duration-300 ease-linear hover:-translate-y-1 hover:text-primary dark:text-white dark:hover:text-primary-400',

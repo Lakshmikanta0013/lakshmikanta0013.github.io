@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { twJoin } from 'tailwind-merge';
+
+import { cn } from '#/lib/cn';
 
 const Logo = ({
   large,
@@ -13,7 +14,7 @@ const Logo = ({
       <svg
         viewBox="0 0 233.462 44.648"
         xmlns="http://www.w3.org/2000/svg"
-        className={twJoin(
+        className={cn(
           large ? 'w-48' : 'w-32',
           variant === 'dark' ? 'text-white' : 'text-dark dark:text-white',
         )}

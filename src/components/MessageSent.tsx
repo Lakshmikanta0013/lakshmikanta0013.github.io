@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
-import sendIcon from '../assets/images/message_send.svg';
-import { RootState } from '../store/store';
+import sendIcon from '#assets/images/message_send.svg';
+import { RootState } from '#store/store';
 
 const MessageSent = () => {
   const {

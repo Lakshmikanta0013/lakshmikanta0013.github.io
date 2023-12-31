@@ -1,5 +1,6 @@
 import { MouseEvent } from 'react';
-import { twJoin } from 'tailwind-merge';
+
+import { cn } from '#/lib/cn';
 
 import CVDownloadButton from './CVDownloadButton';
 import ThemeSwitcher from './ThemeSwitcher';
@@ -61,13 +62,13 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
       </nav>
       {/* Mobile Navbar */}
       <nav
-        className={twJoin(
-          'mt-3 grid w-full overflow-hidden rounded-md bg-white-full px-3 transition-[grid-template-rows]  duration-300 ease-linear dark:bg-dark-700 md:hidden',
+        className={cn(
+          'mt-3 grid w-full overflow-hidden rounded-md bg-white-full px-3 transition-[grid-template-rows]  duration-300 ease-linear md:hidden dark:bg-dark-700',
           !openState ? 'grid-rows-[0fr]' : 'grid-rows-[1fr]',
         )}
       >
         <div
-          className={twJoin(
+          className={cn(
             'min-h-0 transition-[visibility] duration-300',
             !openState ? 'invisible' : 'visible',
           )}
