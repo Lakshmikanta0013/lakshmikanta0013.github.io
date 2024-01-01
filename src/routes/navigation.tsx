@@ -1,14 +1,17 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 
 import Container from '#components/Container';
 import Logo from '#components/Logo';
 import NavigationMenu from '#components/NavigationMenu';
+import { RootState } from '#store/store';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const theme = useSelector((state: RootState) => state.theme);
 
   return (
     <>
@@ -16,7 +19,7 @@ const Navigation = () => {
         <Container>
           <div className="flex w-full flex-wrap items-center justify-between py-3">
             <div className="flex w-full items-center justify-between gap-4 md:w-max">
-              <Logo variant="light" />
+              <Logo variant={theme} large />
               <button
                 data-collapse-toggle="navbar-default"
                 type="button"
@@ -26,7 +29,7 @@ const Navigation = () => {
                 onClick={() => setOpen(!open)}
               >
                 <span className="sr-only">Open main menu</span>
-                <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
+                <FontAwesomeIcon icon={faBars} className="h-8 w-8" />
               </button>
             </div>
             <NavigationMenu openState={open} />

@@ -2,13 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { cn } from '#/lib/cn';
 
-const Logo = ({
-  large,
-  variant,
-}: {
-  large?: boolean;
-  variant: 'dark' | 'light' | undefined;
-}) => {
+const Logo = ({ large, variant }: { large?: boolean; variant: string }) => {
   return (
     <Link to="/">
       <svg
@@ -26,10 +20,10 @@ const Logo = ({
               mixBlendMode: 'normal',
               fill: `${
                 variant === 'dark'
-                  ? 'hsl(159, 94%, 57%)'
-                  : 'hsl(158, 100%, 38%)'
+                  ? 'hsl(var(--color-primary-400))'
+                  : 'hsl(var(--color-primary-600))'
               }`,
-              fillOpacity: 0.9,
+              fillOpacity: 1,
               stroke: 'none',
               strokeWidth: 0.26,
             }}

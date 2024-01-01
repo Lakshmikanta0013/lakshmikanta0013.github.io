@@ -13,35 +13,38 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: 'hsl(180, 80%, 36%)',
-          700: 'hsl(180, 80%, 36%)',
-          600: 'hsl(180, 100%, 40%)',
-          500: 'hsl(180, 90%, 58%)',
-          400: 'hsl(180, 100%, 76%)',
+          DEFAULT: 'hsl(var(--color-primary) / <alpha-value>)',
+          700: 'hsl(var(--color-primary-700) / <alpha-value>)',
+          600: 'hsl(var(--color-primary-600) / <alpha-value>)',
+          500: 'hsl(var(--color-primary-500) / <alpha-value>)',
+          400: 'hsl(var(--color-primary-400) / <alpha-value>)',
         },
         secondary: {
-          DEFAULT: 'hsl(259, 100%, 59%)',
-          600: 'hsl(259, 100%, 59%)',
-          500: 'hsl(259, 100%, 69%)',
-          400: 'hsl(259, 100%, 79%)',
+          DEFAULT: 'hsl(var(--color-secondary) / <alpha-value>)',
+          700: 'hsl(var(--color-secondary-700) / <alpha-value>)',
+          600: 'hsl(var(--color-secondary-600) / <alpha-value>)',
+          500: 'hsl(var(--color-secondary-500) / <alpha-value>)',
+          400: 'hsl(var(--color-secondary-400) / <alpha-value>)',
         },
         white: {
           DEFAULT: 'hsl(240, 21%, 95%)',
           full: 'hsl(255, 100%,100%)',
         },
         dark: {
-          DEFAULT: 'hsl(240, 10%, 14%)',
-          900: 'hsl(240, 10%, 14%)',
-          800: 'hsl(240, 10%, 20%)',
-          700: 'hsl(240, 10%, 30%)',
-          600: 'hsl(240, 10%, 40%)',
-          500: 'hsl(240, 10%, 50%)',
+          DEFAULT: 'hsl(var(--color-dark) / <alpha-value>)',
+          900: 'hsl(var(--color-dark-900) / <alpha-value>)',
+          800: 'hsl(var(--color-dark-800) / <alpha-value>)',
+          700: 'hsl(var(--color-dark-700) / <alpha-value>)',
+          600: 'hsl(var(--color-dark-600) / <alpha-value>)',
+          500: 'hsl(var(--color-dark-500) / <alpha-value>)',
+          400: 'hsl(var(--color-dark-400) / <alpha-value>)',
         },
       },
       animation: {
         slideUp: 'slideUp 0.5s ease-in-out forwards',
         slideLeft: 'slideLeft 0.5s ease-in-out forwards',
         fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+        text: 'text 5s ease infinite alternate',
       },
       keyframes: {
         slideUp: {
@@ -58,6 +61,16 @@ export default {
         fadeIn: {
           '0%': { opacity: 0, transform: 'scale(0.5)' },
           '100%': { opacity: 1, transform: 'scale(1)' },
+        },
+        text: {
+          '0%, 100%': {
+            backgroundSize: '200% 200%',
+            backgroundPosition: 'left center',
+          },
+          '50%': {
+            backgroundSize: '200% 200%',
+            backgroundPosition: 'right center',
+          },
         },
       },
     },
