@@ -44,6 +44,7 @@ export default {
         slideUp: 'slideUp 0.5s ease-in-out forwards',
         slideLeft: 'slideLeft 0.5s ease-in-out forwards',
         fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+        text: 'text 5s ease infinite alternate',
       },
       keyframes: {
         slideUp: {
@@ -60,6 +61,16 @@ export default {
         fadeIn: {
           '0%': { opacity: 0, transform: 'scale(0.5)' },
           '100%': { opacity: 1, transform: 'scale(1)' },
+        },
+        text: {
+          '0%, 100%': {
+            backgroundSize: '200% 200%',
+            backgroundPosition: 'left center',
+          },
+          '50%': {
+            backgroundSize: '200% 200%',
+            backgroundPosition: 'right center',
+          },
         },
       },
     },
