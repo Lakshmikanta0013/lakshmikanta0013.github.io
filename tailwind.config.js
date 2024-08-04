@@ -38,6 +38,7 @@ export default {
           600: 'hsl(var(--color-dark-600) / <alpha-value>)',
           500: 'hsl(var(--color-dark-500) / <alpha-value>)',
           400: 'hsl(var(--color-dark-400) / <alpha-value>)',
+          300: 'hsl(var(--color-dark-300) / <alpha-value>)',
         },
       },
       animation: {

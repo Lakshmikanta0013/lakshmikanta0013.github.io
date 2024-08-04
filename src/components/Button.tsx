@@ -32,7 +32,6 @@ const Button = ({
         buttonType === 'inverted' &&
           'border-2 border-primary text-dark hover:bg-primary hover:text-white',
         buttonType !== 'secondary' &&
-          buttonType !== 'inverted' &&
           'bg-primary text-white hover:bg-primary-600 dark:bg-primary-500 dark:text-dark-800 dark:hover:bg-primary-400 ',
       )}
     >
