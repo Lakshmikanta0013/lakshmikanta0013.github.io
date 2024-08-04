@@ -28,7 +28,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           <img
             src={project.image}
             alt={project.title}
-            className="h-full max-w-full object-cover"
+            className="h-full max-h-[350px] max-w-full object-cover"
           />
           {openModal && <ImageModal onClick={handelClose} project={project} />}
         </a>

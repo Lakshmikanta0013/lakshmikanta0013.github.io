@@ -17,25 +17,25 @@ export const socialLinks: SocialLink[] = [
   {
     id: 1,
     name: 'GutHub',
-    url: 'https:/www.github.com/frontendfixer',
+    url: 'https://github.com/frontendfixer',
     icon: faGithub,
   },
   {
     id: 2,
     name: 'LinkedIn',
-    url: 'https:/www.linkedin.com/in/frontendfixer',
+    url: 'https://linkedin.com/in/frontendfixer',
     icon: faLinkedin,
   },
   {
     id: 3,
     name: 'Instagram',
-    url: 'https:/instagram.com/frontendfixer',
+    url: 'https://instagram.com/frontendfixer',
     icon: faInstagram,
   },
   {
     id: 4,
     name: 'Twitter',
-    url: 'https:/twitter.com/frontendfixer',
+    url: 'https://twitter.com/frontendfixer',
     icon: faTwitter,
   },
 ];
