@@ -80,7 +80,7 @@ const NavigationMenu = ({ openState }: { openState: boolean }) => {
                   <a
                     href={item.path}
                     onClick={handelNavigation}
-                    className="transition-color relative w-full rounded bg-white py-2 text-center font-medium text-dark duration-1000 ease-linear hover:bg-gray-300 dark:bg-dark-900 dark:text-white dark:hover:bg-dark-800"
+                    className="transition-color dark:hover:bg-dark-300 relative w-full rounded bg-white py-2 text-center font-medium text-dark duration-1000 ease-linear hover:bg-gray-300 dark:bg-dark-900 dark:text-white"
                   >
                     {item.itemName}
                   </a>

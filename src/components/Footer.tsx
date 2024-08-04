@@ -9,7 +9,7 @@ const Footer = () => {
 
         <p className="max-w-sm text-center font-serif text-xl text-gray-300">
           Transforming Ideas into Immersive User Experiences with the Power of
-          React
+          Web Development
         </p>
 
         <SocialLinks inverted />
