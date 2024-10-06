@@ -14,11 +14,11 @@ const ImageModal = ({
   return (
     <>
       <div className="fixed inset-0 h-screen w-screen bg-black/50 backdrop-blur-[2px]" />
-      <div className="fixed left-1/2 top-1/2 z-10 w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white px-2 py-6 md:w-4/5 md:px-4 lg:w-2/5 dark:bg-dark-500">
+      <div className="fixed left-1/2 top-1/2 z-10 w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white px-2 py-6 dark:bg-dark-500 md:w-4/5 md:px-4 lg:w-2/5">
         <div className="relative grid grid-cols-1 gap-4">
           <FontAwesomeIcon
             icon={faClose}
-            className="absolute -right-6 -top-9 h-8 w-8 cursor-pointer rounded-full bg-dark-900 p-1 text-white md:-right-8 dark:bg-white dark:text-dark-900"
+            className="absolute -right-6 -top-9 h-8 w-8 cursor-pointer rounded-full bg-dark-900 p-1 text-white dark:bg-white dark:text-dark-900 md:-right-8"
             onClick={onClick}
           />
           <h2 className="border-b p-2 font-serif text-xl font-bold">

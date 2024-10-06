@@ -9,6 +9,7 @@ type ButtonType = {
   onClick?: () => void;
   buttonType?: 'secondary' | 'inverted' | undefined;
   disabled?: boolean;
+  className?: string;
 };
 
 const Button = ({
@@ -18,6 +19,7 @@ const Button = ({
   onClick,
   disabled,
   buttonType,
+  className,
 }: ButtonType) => {
   return (
     <button
@@ -33,6 +35,7 @@ const Button = ({
           'border-2 border-primary text-dark hover:bg-primary hover:text-white',
         buttonType !== 'secondary' &&
           'bg-primary text-white hover:bg-primary-600 dark:bg-primary-500 dark:text-dark-800 dark:hover:bg-primary-400 ',
+        className,
       )}
     >
       {children}
