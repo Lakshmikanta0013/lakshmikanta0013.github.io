@@ -12,10 +12,12 @@ const Weeding = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setErrorMessage('');
-    const secret = '04071995';
+    const secret = import.meta.env.VITE_SECRET;
     if (password === secret) {
       setIsSecret(true);
-      const days = new Date('2025-02-17').getTime() - new Date().getTime();
+      const days =
+        new Date(import.meta.env.VITE_WEEDING_DATE).getTime() -
+        new Date().getTime();
       setDaysLeft(Math.floor(days / (1000 * 60 * 60 * 24)));
     } else {
       setErrorMessage('Oh no! Wrong key. Try again!');
@@ -31,7 +33,7 @@ const Weeding = () => {
   }, [errorMessage]);
 
   return (
-    <div className="grid h-screen w-screen place-items-center bg-purple-400 p-6">
+    <div className="grid h-dvh w-screen place-items-center bg-purple-400 p-6">
       <div className="w-full max-w-md rounded-xl bg-purple-500 p-6 shadow-xl">
         {!isSecret ? (
           <form className="space-y-6" onSubmit={handleSubmit}>
