@@ -24,7 +24,7 @@ const Footer = () => {
             Lakshmikanta
           </a>
         </p>
-        <p className="font-sm text-gray-500">&copy; All right reserved 2023</p>
+        <p className="font-sm text-gray-500">&copy; All right reserved 2024</p>
       </div>
     </div>
   );
